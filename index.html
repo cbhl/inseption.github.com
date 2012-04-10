@@ -4,69 +4,161 @@
      <meta charset="UTF-8">
      <title>inSEption</title>
      <style>
-          body{
-               background:#111;
-               color:#ddd;
-               font-family:monospace;
-          }
-         
-          h1, h2, h3, p, li{
-               font-size:1.5em;
-               font-weight:normal;
-               line-height:1em;
-          }
-         
-          article{
-               margin:0 auto;
-               padding:5em;
-          }
-         
-          h2{
-               color:lightgreen;
-          }
-         
-          ul{
-               list-style:none;
-               padding:0;
-          }
-         
-          li{
-               line-height:1.5em;
-          }
-         
-          a{
-               color:yellow;
-               text-decoration:none;
-          }
-         
-          a:hover{
-               text-decoration:underline;
-          }
-         
-          a:visited{
-               color:orange;
-          }
+		body{
+			background:#111;
+			color:#ddd;
+			font-family:monospace;
+		}
+
+		article{
+			margin:0 auto;
+			padding:5em;
+		}
+
+		h1, h2, h3, p, span, li{
+			font-size:1.5em;
+			font-weight:normal;
+			line-height:1em;
+		}
+
+		h3{
+			color:lightgreen;
+		}
+		
+		.commandlist li{
+			overflow:hidden;
+		}
+			
+			.commandlist span,
+			.commandlist p{
+				display:block;
+				float:left;
+				font-size:1em;
+				line-height:1.5em;
+				margin:0;
+			}
+			
+			.commandlist span{
+				width:100px;
+			}
+		
+		p{
+			outline:none;
+		}
+		
+			p.command{
+				margin-left:1.25em;
+			}
+			
+			p.command:before{
+				content: "$ ";
+				margin-left:-1.25em;
+			}
+	
+		ul{
+			list-style:none;
+			padding:0;
+		}
+
+			ul li{
+				line-height:1.5em;
+			}
+
+		a{
+			color:yellow;
+			text-decoration:none;
+		}
+
+			a:hover{text-decoration:underline;}
+			a:visited{color:orange;}
      </style>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
 
 <article>
-     <h1>We are the University of Waterloo Software Engineering class of 2016. (version 2.0.12)</h1>
-     <h1>Run 'help' to display the help index.</h1>
-     <br />
-     <h2>guest@se2016.com ~</h2>
-     <h3>$ ls</h3>
-     <ul>
-          <li>Alice Yuan (<a href="http://aliceyuan.ca/">aliceyuan.ca</a>)</li>
-          <li>Connor Cimowsky (<a href="http://connorcimowsky.com/">connorcimowsky.com</a>)</li>
-          <li>David Zhu (<a href="http://davidczhu.com/">davidczhu.com</a>)</li>
-          <li>Joshua Kalpin (<a href="http://www.joshuakalp.in/">joshuakalp.in</a>)</li>
-          <li>Stephen Li (<a href="http://stephenli.ca">stephenli.ca</a>)</li>
-     </ul>
-    
-     <h2>guest@se2016.com ~</h2>
-     <h3>$ _</h3>
+	<h1>We are the University of Waterloo Software Engineering class of 2016. (version 2.0.12-04.10)</h1>
+	<h2>Run 'help' to display the help index.</h2>
+	
+	<br />
+	<h3>guest@se2016.com ~</h3>
+	<p class="command">ls</p>
+	<ul class="classlist">
+		<li>Alice Yuan (<a href="http://aliceyuan.ca/">aliceyuan.ca</a>)</li>
+		<li>Connor Cimowsky (<a href="http://connorcimowsky.com/">connorcimowsky.com</a>)</li>
+		<li>David Zhu (<a href="http://davidczhu.com/">davidczhu.com</a>)</li>
+		<li>Joshua Kalpin (<a href="http://www.joshuakalp.in/">joshuakalp.in</a>)</li>
+		<li>Stephen Li (<a href="http://stephenli.ca">stephenli.ca</a>)</li>
+	</ul>
+	
+	<br />
+	<h3>guest@se2016.com ~</h3>
+	<div id="console">
+		<p class="command" contenteditable="true"></p>
+	</div>
 </article>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#console p:last-child').focus();
+	
+	$('#console').on('keypress', 'p', function(e){
+		if (e.which === 13)
+		{
+			$(this).attr('contenteditable', false);
+			e.preventDefault();
+			
+			var command = $(this).text();
+			
+			var parent  = $(this).parent();
+			var output;
+			
+			var header  = $(document.createElement('h3')).text('guest@se2016.com ~');
+			var newLine = $(document.createElement('p')).addClass("command").attr('contenteditable', true);
+			
+			switch(command)
+			{					
+				case "help":
+					output  = '<p>se2016.com (version 2.0.12-04.10)</p>';
+					output += '<ul class="commandlist">';
+					output += '<li><span>ls</span><p>display classlist</p></li>';
+					output += '<li><span>help</span><p>display list of available commands (more coming soon!)</p></li>';
+					output += '<li><span>clear</span><p>clear this console</p></li>';
+					output += '</ul>';
+					break;
+					
+				case "ls":
+					output = $('.classlist');
+					break;
+					
+				case "clear":
+					parent.html(newLine);
+					parent.find('p:last-child').focus();
+					return;
+					break;
+					
+				case "":
+					break;
+					
+				default:
+					output = $(document.createElement('p')).text('se2016.com: "' + command + '" command not found');;
+					break;
+			}
+			
+			parent.append(output);
+			
+			parent.append('<br />');
+			parent.append(header);
+			parent.append(newLine);
+			parent.find('p:last-child').focus();
+
+			$('html, body').animate({ scrollTop: $(document).height() }, 1000);
+		}
+	});
+});
+</script>
 </body>
 </html>
