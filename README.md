@@ -1,4 +1,4 @@
 inSEption
 =========
 
-We're the uWaterloo Software Engineering class of 2016.
+We are the University of Waterloo Software Engineering class of 2016.
