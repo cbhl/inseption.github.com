@@ -1,0 +1,68 @@
+body{
+	background:#111;
+	color:#ddd;
+	font-family:monospace;
+}
+
+article{
+	margin:0 auto;
+	padding:5em;
+}
+
+h1, h2, h3, p, span, li{
+	font-size:1.5em;
+	font-weight:normal;
+	line-height:1em;
+}
+
+h3{
+	color:lightgreen;
+}
+
+.commandlist li{
+	overflow:hidden;
+}
+	
+	.commandlist span,
+	.commandlist p{
+		display:block;
+		float:left;
+		font-size:1em;
+		line-height:1.5em;
+		margin:0;
+	}
+	
+	.commandlist span{
+		color:yellow;
+		width:5em;
+	}
+
+p{
+	outline:none;
+}
+
+	p.command{
+		margin-left:1.25em;
+	}
+	
+	p.command:before{
+		content: "$ ";
+		margin-left:-1.25em;
+	}
+
+ul{
+	list-style:none;
+	padding:0;
+}
+
+	ul li{
+		line-height:1.5em;
+	}
+
+a{
+	color:yellow;
+	text-decoration:none;
+}
+
+	a:hover{text-decoration:underline;}
+	a:visited{color:orange;}
