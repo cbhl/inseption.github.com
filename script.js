@@ -18,12 +18,7 @@ $(document).ready(function(){
 			switch(command)
 			{					
 				case "help":
-					output  = '<p>se2016.com (version 2.0.12-04.10)</p>';
-					output += '<ul class="commandlist">';
-					output += '<li><span>ls</span><p>display classlist</p></li>';
-					output += '<li><span>help</span><p>display list of available commands (more coming soon!)</p></li>';
-					output += '<li><span>clear</span><p>clear this console</p></li>';
-					output += '</ul>';
+					output = $('#template .commandlist').clone();
 					break;
 					
 				case "ls":
@@ -63,7 +58,6 @@ $(document).ready(function(){
 			}
 			
 			parent.append(output);
-			parent.append('<br />');
 			parent.append(header);
 			parent.append(newLine);
 			parent.find('p:last-child').focus();

@@ -17,14 +17,17 @@ h1, h2, h3, p, span, li{
 
 h3{
 	color:lightgreen;
+	margin-top:2em;
 }
 
 .commandlist li{
 	overflow:hidden;
 }
 	
-	.commandlist span,
-	.commandlist p{
+	#template .commandlist{display:none;}
+
+	.commandlist li span,
+	.commandlist li p{
 		display:block;
 		float:left;
 		font-size:1em;
@@ -32,7 +35,7 @@ h3{
 		margin:0;
 	}
 	
-	.commandlist span{
+	.commandlist li span{
 		color:yellow;
 		width:5em;
 	}
