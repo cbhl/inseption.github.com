@@ -4,10 +4,12 @@ body{
 	font-family:monospace;
 }
 
-article{
+#container{
 	margin:0 auto;
 	padding:5em;
 }
+
+#template{display:none;}
 
 h1, h2, h3, p, span, li{
 	font-size:1.5em;
@@ -20,11 +22,15 @@ h3{
 	margin-top:2em;
 }
 
+img{
+	display:block;
+	margin:1em 0;
+	max-width:100%;
+}
+
 .commandlist li{
 	overflow:hidden;
 }
-	
-	#template .commandlist{display:none;}
 
 	.commandlist li span,
 	.commandlist li p{

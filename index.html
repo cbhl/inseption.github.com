@@ -3,19 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>inSEption</title>
-	<link rel="stylesheet" href="style.css"/>
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-<article>
+<div id="container">
 	<h1>We are the University of Waterloo Software Engineering class of 2016. (version 2.0.12-04.10)</h1>
 	<h2>Run 'help' to display the help index.</h2>
 	
-	<h3>guest@se2016.com ~</h3>
-	<p class="command">ls</p>
 	<div id="template">
 		<div class="classlist">
 			<ul>
@@ -39,19 +34,34 @@
 				</li>
 				<li>
 					<span>clear</span>
-					<p>clear this console</p>
+					<p>clear this terminal</p>
 				</li>
 			</ul>
 		</div>
 	</div>
 	
-	<h3>guest@se2016.com ~</h3>
-	<div id="console">
+	<div id="terminal">
+		<h3>guest@se2016.com ~</h3>
+		<p class="command">ls</p>
+		<div class="classlist">
+			<ul>
+				<li>Alice Yuan (<a href="http://aliceyuan.ca/">aliceyuan.ca</a>)</li>
+				<li>Connor Cimowsky (<a href="http://connorcimowsky.com/">connorcimowsky.com</a>)</li>
+				<li>David Zhu (<a href="http://davidczhu.com/">davidczhu.com</a>)</li>
+				<li>Joshua Kalpin (<a href="http://www.joshuakalp.in/">joshuakalp.in</a>)</li>
+				<li>Stephen Li (<a href="http://stephenli.ca">stephenli.ca</a>)</li>
+			</ul>			
+		</div>
+		
+		<h3>guest@se2016.com ~</h3>
 		<p class="command" contenteditable="true"></p>
 	</div>
-</article>
+</div>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="js/cmd_main.js"></script>
+<script type="text/javascript" src="js/cmd_findsurprise.js"></script>
+<script type="text/javascript" src="js/cmd_misc.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
