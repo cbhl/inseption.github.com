@@ -12,7 +12,7 @@ var cmd = new Object;
 
 cmd['help']          = help;
 cmd['ls']            = ls;
-cmd['clear']         = clear;
+cmd['cls']           = cls;
 cmd['dir']           = dir;
 cmd['42']            = n42;
 cmd['gg']            = gg;

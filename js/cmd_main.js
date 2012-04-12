@@ -25,7 +25,7 @@ var ls = function cmd_ls()
 	return $('#template .classlist').clone();
 }
 
-var clear = function cmd_clear()
+var cls= function cmd_cls()
 {
 	$('#terminal').html('');
 	return;
