@@ -10,14 +10,16 @@ var cmd = new Object;
 		- return DOM object or null
 */
 
-cmd['help']          = help;
-cmd['ls']            = ls;
-cmd['cls']           = cls;
-cmd['dir']           = dir;
-cmd['42']            = n42;
-cmd['gg']            = gg;
-cmd['exit']          = exit;
-cmd['']              = blank;
+cmd['help']         = help;
+cmd['ls']           = ls;
+cmd['cls']          = cls;
+cmd['dir']          = dir;
+cmd['date']			= date;
+
+cmd['42']           = n42;
+cmd['gg']           = gg;
+cmd['exit']         = exit;
+cmd['']             = blank;
 
 //-----------------------------------------------------
 
@@ -36,8 +38,10 @@ $(document).ready(function(){
 			
 			try
 			{
-				output = findsurprise(command);
+				// try to find special commands
+				output = find(command);
 				
+				// if can't find anything special, try eval it
 				if (output == null)
 				{
 					output = cmd[command]();

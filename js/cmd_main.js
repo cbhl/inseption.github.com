@@ -25,10 +25,16 @@ var ls = function cmd_ls()
 	return $('#template .classlist').clone();
 }
 
-var cls= function cmd_cls()
+var cls = function cmd_cls()
 {
 	$('#terminal').html('');
 	return;
+}
+
+var date = function cmd_date()
+{
+	var d = new Date();
+	return $(document.createElement('p')).text(d.toString());
 }
 
 var blank = function cmd_blank()
