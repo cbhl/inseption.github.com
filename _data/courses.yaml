@@ -1,0 +1,200 @@
+- 
+    name: "1A"
+    term: 2
+    numberOfElectives: 0
+    requiredCourses: 
+        - 
+            department: "SE"
+            code: "101"
+            name: "Introduction to Methods of Software Engineering"
+        - 
+            department: "CS"
+            code: "137"
+            name: "Programming Principles"
+        - 
+            department: "ECE"
+            code: "105"
+            name: "Physics of Electrical Engineering 1"
+        - 
+            department: "ECE"
+            code: "140"
+            name: "Linear Circuits"
+        - 
+            department: "MATH"
+            code: "115"
+            name: "Linear Algebra for Engineering"
+        - 
+            department: "MATH"
+            code: "117"
+            name: "Calculus 1 for Engineering"
+- 
+    name: "1B"
+    term: 0
+    numberOfElectives: 0
+    requiredCourses: 
+        - 
+            department: "SE"
+            code: "102"
+            name: "Seminar"
+        - 
+            department: "CS"
+            code: "138"
+            name: "Introduction to Data Abstraction and Implementation"
+        - 
+            department: "ECE"
+            code: "106"
+            name: "Physics of Electrical Engineering 2"
+        - 
+            department: "ECE"
+            code: "126"
+            name: "Digital Circuits and Systems"
+        - 
+            department: "MATH"
+            code: "135"
+            name: "Algebra for Honours Mathematics"
+        - 
+            department: "MATH"
+            code: "119"
+            name: "Calculus 2 for Engineering"
+- 
+    name: "2A"
+    term: 2
+    numberOfElectives: 1
+    requiredCourses: 
+        - 
+            department: "SE"
+            code: "201"
+            name: "Seminar"
+        - 
+            department: "CS"
+            code: "241"
+            name: "Foundations of Sequential Programs"
+        - 
+            department: "ECE"
+            code: "222"
+            name: "Digital Computers"
+        - 
+            department: "SE"
+            code: "212"
+            name: "Logic and Computation"
+        - 
+            department: "STAT"
+            code: "206"
+            name: "Statistics for Software Engineering"
+- 
+    name: "2B"
+    term: 1
+    numberOfElectives: 1
+    requiredCourses: 
+        - 
+            department: "SE"
+            code: "202"
+            name: "Seminar"
+        - 
+            department: "CS"
+            code: "240"
+            name: "Data Structures and Data Management"
+        - 
+            department: "CS"
+            code: "247"
+            name: "Software Engineering Principles"
+        - 
+            department: "MSCI"
+            code: "261"
+            name: "Engineering Economics: Financial Management for Engineers"
+        - 
+            department: "MATH"
+            code: "213"
+            name: "Advanced Mathematics for Software Engineers"
+        - 
+            department: "MATH"
+            code: "239"
+            name: "Introduction to Combinatorics"
+- 
+    name: "3A"
+    term: 0
+    numberOfElectives: 1
+    requiredCourses: 
+        - 
+            department: "SE"
+            code: "301"
+            name: "Seminar"
+        - 
+            department: "CS"
+            code: "341"
+            name: "Algorithms"
+        - 
+            department: "CS"
+            code: "349"
+            name: "User Interfaces"
+        - 
+            department: "SE"
+            code: "350"
+            name: "Operating Systems"
+        - 
+            department: "SE"
+            code: "380"
+            name: "Introduction to Feedback Control"
+- 
+    name: "3B"
+    term: 2
+    numberOfElectives: 2
+    requiredCourses: 
+        - 
+            department: "SE"
+            code: "302"
+            name: "Seminar"
+        - 
+            department: "CS"
+            code: "343"
+            name: "Concurrent and Parallel Programming"
+        - 
+            department: "CS"
+            code: "348"
+            name: "Introduction to Database Management"
+        - 
+            department: "SE"
+            code: "390"
+            name: "Design Project Planning"
+        - 
+            department: "SE"
+            code: "463"
+            name: "Software Requirements Specification and Analysis"
+- 
+    name: "4A"
+    term: 1
+    numberOfElectives: 2
+    requiredCourses: 
+        - 
+            department: "SE"
+            code: "401"
+            name: "Seminar"
+        - 
+            department: "ECE"
+            code: "358"
+            name: "Computer Networks"
+        - 
+            department: "SE"
+            code: "464"
+            name: "Software Design and Architectures"
+        - 
+            department: "SE"
+            code: "490"
+            name: "Design Project 1"
+- 
+    name: "4B"
+    term: 0
+    numberOfElectives: 4
+    requiredCourses: 
+        - 
+            department: "SE"
+            code: "402"
+            name: "Seminar"
+        - 
+            department: "SE"
+            code: "465"
+            name: "Software Testing and Quality Assurance"
+        - 
+            department: "SE"
+            code: "491"
+            name: "Design Project 2"

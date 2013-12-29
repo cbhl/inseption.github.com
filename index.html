@@ -2,61 +2,54 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>SE2016 - inSEption</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <title>uWaterloo Software Engineering Class of 2016</title>
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- 
+    <link rel="stylesheet" href="/assets/css/main.css">
+     -->
+    <link rel="stylesheet/less" href="assets/less/main.less">
+    <script type="text/javascript" src="assets/js/less.js"></script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="assets/js/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
 
-<div id="container">
-    <h1>We are the University of Waterloo Software Engineering class of 2016. (version 2.0.12-07.09)</h1>
-    <h2>Run 'help' to display the help index.</h2>
+<header class="menu">
+    <nav class="grid">
+        <ul class="row">
+            <li class="col-4">
+                <a href="#" class="home">Home</a>
+            </li>
+            <li class="col-4">
+                <a href="#" class="schedule">Schedule</a>
+            </li>
+            <li class="col-4">
+                <a href="#" class="links">Links</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-    <div id="template">
-        <div class="classlist">
-            <ul>
-                <li class="active">Alice Yuan >> <a href="http://aliceyuan.ca/">aliceyuan.ca</a></li>
-                <li class="active">Alykhan Kanji >> <a href="http://alykhan.com/">alykhan.com</a></li>
-                <li class="active">Connor Cimowsky >> <a href="http://connorcimowsky.com/">connorcimowsky.com</a></li>
-                <li class="active">Christian Deange >> <a href="http://deange.ca">deange.ca</a></li>
-                <li class="active">David Zhu >> <a href="http://davidczhu.com/">davidczhu.com</a></li>
-                <li class="active">Joshua Kalpin >> <a href="http://www.joshuakalp.in/">joshuakalp.in</a></li>
-                <li class="active">Stephen Li >> <a href="http://stephenli.ca">stephenli.ca</a></li>
-                <li class="active">Victor Lai >> <a href="http://www.laivictor.com">laivictor.com</a></li>
-            </ul>
-        </div>
-        <div class="commandlist">
-            <p>se2016.com (version 2.0.12-07.09)</p>
-            <ul>
-                <li>
-                    <span>ls</span>
-                    <p>display classlist</p>
-                </li>
-                <li>
-                    <span>help</span>
-                    <p>display list of available commands (more coming soon!)</p>
-                </li>
-                <li>
-                    <span>cls</span>
-                    <p>clear this terminal</p>
-                </li>
-                <li>
-                    <span>date</span>
-                    <p>display the current time and date</p>
-                </li>
-            </ul>
+<article class="grid intro">
+    <div class="row">
+        <div class="col-6 push-3">
+            <h1 class="inseption">inSEption</h1>
+            <h2>This is the class homepage of University of Waterloo's Software Engineering Class of 2016.</h2>
         </div>
     </div>
+</article>
 
-    <div id="terminal">
-        <h3>guest@se2016.com ~</h3>
-        <p class="command" contenteditable="true"></p>
+<footer class="copyright">
+    <div class="grid">
+        <p class="col-12">&copy; 2013 www.se2016.com</p>
     </div>
-</div>
+</footer>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script type="text/javascript" src="js/cmd_main.js"></script>
-<script type="text/javascript" src="js/cmd_misc.js"></script>
-<script type="text/javascript" src="js/cmd_miscfind.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
 </body>
 </html>

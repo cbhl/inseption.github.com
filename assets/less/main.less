@@ -1,0 +1,92 @@
+@grid-width:    1220px;
+@mobile-width:  960px;
+
+@text-color:    #333;
+@blue:          #44749D;
+@grey:          rgb(155,161,168);
+@border-color:  #eee;
+@border:        1px solid @border-color;
+
+@import 'normalize.less';
+@import 'onepcssgrid.less';
+
+//------------------------------------------------------------------------------- Common classes
+
+body{
+    color:@text-color;
+    font-size:1em;
+    line-height:2em;
+}
+
+//------------------------------------------------------------------------------- Menu
+
+.menu{
+    border-bottom:@border;
+
+    ul{
+        margin:0;
+
+        li{
+
+            a{
+                background-repeat:no-repeat;
+                background-position:center 50px;
+                display:block;
+                color:@text-color;
+                font-weight:bold;
+                outline:none;
+                padding:134px 0 30px;
+                text-align:center;
+                text-decoration:none;
+
+                &.home{
+                    background-image:url(../img/home.png);
+                }
+
+                &.schedule{
+                    background-image:url(../img/schedule.png);
+                }
+
+                &.links{
+                    background-image:url(../img/links.png);
+                }
+
+                &:hover{
+                    background-color:@border-color;
+                    transition:1s;
+                }
+            }
+        }
+    }
+}
+
+.copyright{
+    border-top:@border;
+
+    p{
+        color:@grey;
+        font-size:13px;
+        padding:20px 0;
+        text-align:center;
+    }
+}
+
+//------------------------------------------------------------------------------- Homepage
+
+.intro{
+    h1.inseption{
+        background:no-repeat center;
+        background-size:100% auto;
+        background-image:url(../img/inseption.png);
+        background-image:url(../img/inseption.svg);
+        margin:100px auto 40px;
+        width:100%; height:100px;
+        text-indent:-9999px;
+    }
+    
+    h2{
+        color:rgb(155,161,168);
+        margin-bottom:100px;
+        text-align:center;
+    }
+}
