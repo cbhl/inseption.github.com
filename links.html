@@ -1,0 +1,36 @@
+---
+layout: default
+title: Links | uWaterloo Software Engineering Class of 2016
+---
+
+<article class="grid links">
+    <div class="row">
+        <section class="col-8">
+            <h1>Useful Links</h1>
+            <ul>
+                {% for link in site.data.links %}
+                <li>
+                    <a href="http://{{ link.url }}">
+                        <strong>{{ link.name }}</strong>
+                        <em>{{ link.url }}</em>
+                        <p>{{ link.desc }}</p>
+                    </a>
+                </li>    
+                {% endfor %}
+            </ul>
+        </section>
+        <aside class="col-4">
+            <h1>Contacts</h1>
+            <ul>
+                {% for contact in site.data.classmates %}
+                <li>
+                    <a href="http://{{ contact.homepage }}">
+                        <strong>{{ contact.name }}</strong>
+                        <em>{{ contact.homepage }}</em>
+                    </a>
+                </li>    
+                {% endfor %}
+            </ul>
+        </aside>
+    </div>
+</article>
