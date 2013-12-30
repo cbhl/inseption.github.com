@@ -1,5 +1,5 @@
 -
-    category: "ATE1 - CS"
+    category: "ATE - CS"
     numberRequired: 1
     electives: 
         - 
@@ -59,7 +59,7 @@
             code: "488"
             name: "Introduction to Computer Graphics"
 - 
-    category: "ATE2 - ECE"
+    category: "ATE - ECE"
     numberRequired: 1
     electives: 
         - 
@@ -127,7 +127,7 @@
             code: "488"
             name: "Multivariable Control Systems"
 - 
-    category: "ATE3 - CS/ECE"
+    category: "ATE - CS/ECE"
     numberRequired: 1
     electives: 
         - 
@@ -187,7 +187,7 @@
             code: "558"
             name: "Fuzzy Logic and Neural Networks"
 - 
-    category: "ATE4"
+    category: "ATE - General"
     numberRequired: 1
     electives: 
         - 
@@ -279,10 +279,6 @@
             code: "209"
             name: ""
 - 
-    category: "List A - Social Issues"
-    numberRequired: 1
-    electives: []
-- 
     category: "Communication"
     numberRequired: 1
     electives: 
@@ -323,6 +319,143 @@
             code: "432"
             name: ""
 - 
+    category: "List A - Social Issues"
+    numberRequired: 1
+    electives: 
+        -
+            department: "ANTH"
+            code: "102"
+            name: "Introduction to Social and Cultural Anthropology"
+        -
+            department: "ECE"
+            code: "390"
+            name: "Engineering Design, Economics, and Impact on Society"
+        -
+            department: "ERS"
+            code: "215"
+            name: "Environmental and Sustainability Assessment I"
+        -
+            department: "ERS"
+            code: "315"
+            name: "Environmental and Sustainability Assessment II"
+        -
+            department: "GENE"
+            code: "22A"
+            name: "Topics for List A Complementary Studies Courses Taken on Exchange by Engineering Students"
+        -
+            department: "GEOG"
+            code: "203"
+            name: "Environment and Development in a Global Perspective"
+        -
+            department: "GEOG"
+            code: "368"
+            name: "Conservation/Resource Management of the Built Environment"
+        -
+            department: "MSCI"
+            code: "422"
+            name: "Economic Impact of Technological Change and Entrepreneurship"
+        -
+            department: "MSCI"
+            code: "442"
+            name: "Impact of Information Systems on Organizations and Society"
+        -
+            department: "PHIL"
+            code: "226"
+            name: "Biomedical Ethics"
+        -
+            department: "SOC"
+            code: "232"
+            name: "Technology and Social Change"
+        -
+            department: "STV"
+            code: "100"
+            name: "Society, Technology and Values: Introduction"
+        -
+            department: "STV"
+            code: "202"
+            name: "Design and Society"
+        -
+            department: "STV"
+            code: "203"
+            name: "Biotechnology and Society"
+        -
+            department: "STV"
+            code: "205"
+            name: "Cybernetics and Society"
+        -
+            department: "STV"
+            code: "302"
+            name: "Information Technology and Society"
+        -
+            department: "STV"
+            code: "404"
+            name: "Technology in Canadian Society"
+        -
+            department: "SYDE"
+            code: "261"
+            name: "Design, Systems, and Society"
+        -
+            department: "WS"
+            code: "205"
+            name: "Gender, Culture and Technology"
+- 
     category: "List C - Humanities and Social Sciences"
     numberRequired: 2
-    electives: []
+    notes: "This is only the list of pre-scheduled Humanities and Social Sciences courses that are unlikely to conflict with Engineering schedules. Click <a href=http://ugradcalendar.uwaterloo.ca/default.aspx?pageID=154#ListC--HumanitiesandSocialSciencesCourses>here</a> for a complete list of courses for this category."
+    electives:
+        -
+            department: "ECON"
+            code: "101"
+            name: 
+        -
+            department: "ECON"
+            code: "202"
+            name: 
+        -
+            department: "MSCI"
+            code: "211"
+            name: 
+        -
+            department: "MSCI"
+            code: "311"
+            name: 
+        -
+            department: "PSCI"
+            code: "260"
+            name: 
+        -
+            department: "PSYCH"
+            code: "101"
+            name: 
+        -
+            department: "SOC"
+            code: "101"
+            name: 
+        -
+            department: "ENGL"
+            code: "105A"
+            name: 
+        -
+            department: "HIST"
+            code: "253"
+            name: 
+        -
+            department: "HIST"
+            code: "254"
+            name: 
+        -
+            department: "HIST"
+            code: "275"
+            name: 
+        -
+            department: "PHIL"
+            code: "250A"
+            name: 
+        -
+            department: "PHIL"
+            code: "250B"
+            name: 
+        -
+            department: "PHIL"
+            code: "315"
+            name: 

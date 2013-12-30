@@ -33,10 +33,6 @@
     numberOfElectives: 0
     requiredCourses: 
         - 
-            department: "SE"
-            code: "102"
-            name: "Seminar"
-        - 
             department: "CS"
             code: "138"
             name: "Introduction to Data Abstraction and Implementation"
@@ -62,10 +58,6 @@
     numberOfElectives: 1
     requiredCourses: 
         - 
-            department: "SE"
-            code: "201"
-            name: "Seminar"
-        - 
             department: "CS"
             code: "241"
             name: "Foundations of Sequential Programs"
@@ -86,10 +78,6 @@
     term: 1
     numberOfElectives: 1
     requiredCourses: 
-        - 
-            department: "SE"
-            code: "202"
-            name: "Seminar"
         - 
             department: "CS"
             code: "240"
@@ -116,10 +104,6 @@
     numberOfElectives: 1
     requiredCourses: 
         - 
-            department: "SE"
-            code: "301"
-            name: "Seminar"
-        - 
             department: "CS"
             code: "341"
             name: "Algorithms"
@@ -140,10 +124,6 @@
     term: 2
     numberOfElectives: 2
     requiredCourses: 
-        - 
-            department: "SE"
-            code: "302"
-            name: "Seminar"
         - 
             department: "CS"
             code: "343"
@@ -166,10 +146,6 @@
     numberOfElectives: 2
     requiredCourses: 
         - 
-            department: "SE"
-            code: "401"
-            name: "Seminar"
-        - 
             department: "ECE"
             code: "358"
             name: "Computer Networks"
@@ -186,10 +162,6 @@
     term: 0
     numberOfElectives: 4
     requiredCourses: 
-        - 
-            department: "SE"
-            code: "402"
-            name: "Seminar"
         - 
             department: "SE"
             code: "465"
