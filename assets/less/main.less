@@ -80,23 +80,23 @@ ul{
 
             strong,
             span,
-            p{
+            p {
                 display:block;
             }
 
-            strong{
+            strong {
                 font-size:24px;
                 margin-bottom:5px;
             }
 
-            span{
+            span {
                 color:@blue;
                 font-size:13px;
                 font-style:normal;
                 line-height:1em;
             }
 
-            p{
+            p {
                 margin:10px 0 0;
                 padding-left:20px;
             }
@@ -114,31 +114,36 @@ ul{
 .menu{
     border-bottom:@border;
 
-    ul{
+    ul {
         margin:0;
 
-        li{
+        li {
             border:none;
 
-            a{
-                background-repeat:no-repeat;
-                background-position:center 50px;
+            a {
                 display:block;
                 font-weight:bold;
                 outline:none;
-                padding:134px 0 30px;
+                padding: 10px 0 0 0;
                 text-align:center;
 
-                &.home{
-                    background-image:url(../img/home.png);
-                }
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align:center;
 
-                &.schedule{
-                    background-image:url(../img/schedule.png);
+                    width: 80px;
+                    height: 80px;
+                    padding: 0 5px;
                 }
+            }
 
-                &.links{
-                    background-image:url(../img/links.png);
+            @media (max-width:@mobile-width){
+                a {
+                    img {
+                        display: none;
+                    }
                 }
             }
         }
@@ -169,7 +174,7 @@ ul{
         background-image:url(../img/inseption.svg);
         margin:auto;
         margin-bottom:40px;
-        width:100%; height:80px;
+        width:100%; height:130px;
         text-indent:-9999px;
     }
     

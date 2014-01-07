@@ -1,4 +1,8 @@
 -
-    name: Schedule of Classes for Undergraduate
-    url: http://www.adm.uwaterloo.ca/infocour/CIR/SA/under.html
-    desc: Check enrollment status for classes
+    name: "Class Schedule Utility"
+    url: "www.adm.uwaterloo.ca/infocour/CIR/SA/under.html"
+    desc: "Check enrollment status and schedules for classes"
+-
+    name: "Quest Login"
+    url: "https://quest.pecs.uwaterloo.ca/psp/SS/"
+    desc: "Quest UWaterloo login"

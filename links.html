@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Links | uWaterloo Software Engineering Class of 2016
+title: Links | UWaterloo Software Engineering Class of 2016
 ---
 
 <article class="links">
-    <div class="row">
 
-        <section class="col-8">
+    <div class="row">
+        <section class="col-12">
             <h1>Useful Links</h1>
             <ul>
                 {% for link in site.data.links %}
@@ -20,20 +20,25 @@ title: Links | uWaterloo Software Engineering Class of 2016
                 {% endfor %}
             </ul>
         </section>
+    </div>
 
-        <aside class="col-4">
-            <h1>Contacts</h1>
+    <div class="row">
+        <section class="col-12">
+            <h1>Student Sites</h1>
+        </section>
+
+        <section>
             <ul>
                 {% for contact in site.data.classmates %}
-                <li>
+                <li class="col-4">
                     <a href="http://{{ contact.homepage }}">
                         <strong>{{ contact.name }}</strong>
                         <span>{{ contact.homepage }}</span>
                     </a>
-                </li>    
+                </li>
                 {% endfor %}
             </ul>
-        </aside>
-        
+        </section>
     </div>
+
 </article>
