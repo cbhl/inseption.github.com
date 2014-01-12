@@ -1,0 +1,81 @@
+---
+layout: default
+title: Schedule | UWaterloo Software Engineering Class of 2016
+---
+
+<article class="schedule">
+    <div class="row">
+
+        <section class="col-12">
+            <h1>Schedule</h1>
+            <p>This table is provided for your convenience and may not be up to date.</p>
+            <table>
+                {% for term in site.data.courses reversed %}
+                <tr data-term="{{ term.term }}">
+                    <td>
+                        <strong>{{ term.name }}</strong>
+                        <span>
+                            {% case term.term %}
+                            {% when 0 %}
+                                Winter
+                            {% when 1 %}
+                                Spring
+                            {% when 2 %}
+                                Fall
+                            {% endcase %}
+                        </span>
+                    </td>
+
+                    {% for course in term.requiredCourses %}
+                    <td>
+                        <strong>{{ course.department }} {{ course.code }}</strong>
+                        <span>{{ course.name }}</span>
+                    </td>
+                    {% endfor %}
+
+                    {% for i in (1..term.numberOfElectives) %}
+                    <td class="elective">
+                        <span>Elective</span>
+                    </td>
+                    {% endfor %}
+
+                    {% assign leftover = 6 (|minus:term.requiredCourses.size) (|minus:term.numberOfElectives) %}
+                    {% for i in (1..leftover) %}
+                    <td class="inactive">
+                        &nbsp;
+                    </td>
+                    {% endfor %}
+
+                </tr>
+                {% endfor %}
+            </table>
+        </section>
+    </div>
+
+    <div class="row">
+        <section class="col-12">
+            <h1>Electives</h1>
+            <p>You have to take the required number of electives from each of the following categories as indicated by parenthesis. It is recommended that you plan for your Advanced Technical Electives (ATE) ahead of time because some of them are only offered at specific terms.</p>
+        </section>
+    </div>
+
+    {% for category in site.data.electives %}
+    {% cycle '<div class="row">', '' %}
+        <aside class="col-6">
+            <h2>{{ category.category }} ({{ category.numberRequired }})</h2>
+            {% if category.notes != null %}
+                <p>{{ category.notes }}</p>
+            {% endif %}
+            <table>
+                {% for course in category.electives %}
+                <tr>
+                    <td class="course-code">{{ course.department }} {{ course.code }}</td>
+                    <td class="course-title">{{ course.name }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </aside>
+    {% cycle '', '</div>' %}
+    {% endfor %}
+    
+</article>

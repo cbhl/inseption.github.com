@@ -1,0 +1,461 @@
+-
+    category: "ATE - CS"
+    numberRequired: 1
+    electives: 
+        - 
+            department: "CS"
+            code: "442"
+            name: "Principles of Programming Languages"
+        - 
+            department: "CS"
+            code: "444"
+            name: "Compiler Construction"
+        - 
+            department: "CS"
+            code: "448"
+            name: "Database Systems Implementation"
+        - 
+            department: "CS"
+            code: "449"
+            name: "Human Computer Interaction"
+        - 
+            department: "CS"
+            code: "450"
+            name: "Computer Architecture"
+        - 
+            department: "CS"
+            code: "452"
+            name: "Real-time Programming"
+        - 
+            department: "CS"
+            code: "454"
+            name: "Distributed Systems"
+        - 
+            department: "CS"
+            code: "457"
+            name: "System Performance Evaluation"
+        - 
+            department: "CS"
+            code: "458"
+            name: "Computer Security and Privacy"
+        - 
+            department: "CS"
+            code: "473"
+            name: "Medical Image Processing"
+        - 
+            department: "CS"
+            code: "484"
+            name: "Computational Vision"
+        - 
+            department: "CS"
+            code: "485"
+            name: "Machine Learning: Statistical and Computational Foundations"
+        - 
+            department: "CS"
+            code: "486"
+            name: "Introduction to Artificial Intelligence"
+        - 
+            department: "CS"
+            code: "488"
+            name: "Introduction to Computer Graphics"
+- 
+    category: "ATE - ECE"
+    numberRequired: 1
+    electives: 
+        - 
+            department: "ECE"
+            code: "409"
+            name: "Cryptography and System Security"
+        - 
+            department: "ECE"
+            code: "416"
+            name: "Higher Level Network Protocols"
+        - 
+            department: "ECE"
+            code: "417"
+            name: "Image Processing"
+        - 
+            department: "ECE"
+            code: "418"
+            name: "Communications Networks"
+        - 
+            department: "ECE"
+            code: "419"
+            name: "Communication System Security"
+        - 
+            department: "ECE"
+            code: "423"
+            name: "Embedded Computer Systems"
+        - 
+            department: "ECE"
+            code: "429"
+            name: "Computer Structures"
+        - 
+            department: "ECE"
+            code: "454"
+            name: "Distributed and Network Computing"
+        - 
+            department: "ECE"
+            code: "455"
+            name: "Embedded Software "
+        - 
+            department: "ECE"
+            code: "457A"
+            name: "Cooperative and Adaptive Algorithms"
+        - 
+            department: "ECE"
+            code: "457B"
+            name: "Fundamentals of Computational Intelligence"
+        - 
+            department: "ECE"
+            code: "458"
+            name: "Computer Security"
+        - 
+            department: "ECE"
+            code: "459"
+            name: "Programming for Performance"
+        - 
+            department: "ECE"
+            code: "481"
+            name: "Digital Control Systems"
+        - 
+            department: "ECE"
+            code: "486"
+            name: "Robot Dynamics and Control"
+        - 
+            department: "ECE"
+            code: "488"
+            name: "Multivariable Control Systems"
+- 
+    category: "ATE - CS/ECE"
+    numberRequired: 1
+    electives: 
+        - 
+            department: "CO"
+            code: "487"
+            name: "Applied Cryptography"
+        - 
+            department: "CS"
+            code: "462"
+            name: "Formal Languages and Parsing"
+        - 
+            department: "CS"
+            code: "466"
+            name: "Algorithm Design and Analysis"
+        - 
+            department: "CS"
+            code: "467"
+            name: "Introduction to Quantum Information Processing"
+        - 
+            department: "CS"
+            code: "475"
+            name: "Computational Linear Algebra"
+        - 
+            department: "CS"
+            code: "487"
+            name: "Introduction to Symbolic Computation"
+        - 
+            department: "CS"
+            code: "489"
+            name: "Advanced Topics in Computer Science"
+        - 
+            department: "CS"
+            code: "490"
+            name: "Information Systems Management"
+        - 
+            department: "ECE "
+            code: "406"
+            name: "Algorithm Design and Analysis"
+        - 
+            department: "SE"
+            code: "498"
+            name: "Advanced Topics in Software Engineering"
+        - 
+            department: "SE"
+            code: "499"
+            name: "Project"
+        - 
+            department: "SYDE"
+            code: "433"
+            name: "Conflict Resolution"
+        - 
+            department: "SYDE"
+            code: "475"
+            name: "Image Processing"
+        - 
+            department: "SYDE"
+            code: "558"
+            name: "Fuzzy Logic and Neural Networks"
+- 
+    category: "ATE - General"
+    numberRequired: 1
+    electives: 
+        - 
+            department: "CS"
+            code: "360"
+            name: "Introduction to the Theory of Computing"
+        - 
+            department: "CS"
+            code: "365"
+            name: "Models of Computation"
+        - 
+            department: "CS"
+            code: "370"
+            name: "Numerical Computation"
+        - 
+            department: "CS"
+            code: "371"
+            name: "Introduction to Computational Mathematics "
+        - 
+            department: "ECE"
+            code: "207"
+            name: "Signals and Systems"
+        - 
+            department: "ECE"
+            code: "224"
+            name: "Embedded Microprocessor Systems"
+        - 
+            department: "ECE"
+            code: "327"
+            name: "Digital Hardware Systems"
+        - 
+            department: "SYDE"
+            code: "348"
+            name: "User Centred Design Methods"
+- 
+    category: "Science"
+    numberRequired: 2
+    electives: 
+        - 
+            department: "BIOL"
+            code: "130"
+            name: ""
+        - 
+            department: "BIOL"
+            code: "239"
+            name: ""
+        - 
+            department: "BIOL"
+            code: "240"
+            name: ""
+        - 
+            department: "BIOL"
+            code: "273"
+            name: ""
+        - 
+            department: "CHE"
+            code: "161"
+            name: ""
+        - 
+            department: "CHEM"
+            code: "262"
+            name: ""
+        - 
+            department: "EARTH"
+            code: "121"
+            name: ""
+        - 
+            department: "PHYS"
+            code: "234"
+            name: ""
+        - 
+            department: "PHYS"
+            code: "246"
+            name: ""
+        - 
+            department: "PHYS"
+            code: "275"
+            name: ""
+        - 
+            department: "PHYS"
+            code: "334"
+            name: ""
+        - 
+            department: "PHYS"
+            code: "375"
+            name: ""
+        - 
+            department: "ECE"
+            code: "209"
+            name: ""
+- 
+    category: "Communication"
+    numberRequired: 1
+    electives: 
+        - 
+            department: "ENGL"
+            code: "109"
+            name: ""
+        - 
+            department: "ENGL"
+            code: "119"
+            name: ""
+        - 
+            department: "ENGL"
+            code: "140R"
+            name: ""
+        - 
+            department: "ENGL"
+            code: "210F"
+            name: ""
+        - 
+            department: "ENGL"
+            code: "210G"
+            name: ""
+        - 
+            department: "SPCOM"
+            code: "100"
+            name: ""
+        - 
+            department: "SPCOM"
+            code: "223"
+            name: ""
+        - 
+            department: "SPCOM"
+            code: "324"
+            name: ""
+        - 
+            department: "SPCOM"
+            code: "432"
+            name: ""
+- 
+    category: "List A - Social Issues"
+    numberRequired: 1
+    electives: 
+        -
+            department: "ANTH"
+            code: "102"
+            name: "Introduction to Social and Cultural Anthropology"
+        -
+            department: "ECE"
+            code: "390"
+            name: "Engineering Design, Economics, and Impact on Society"
+        -
+            department: "ERS"
+            code: "215"
+            name: "Environmental and Sustainability Assessment I"
+        -
+            department: "ERS"
+            code: "315"
+            name: "Environmental and Sustainability Assessment II"
+        -
+            department: "GENE"
+            code: "22A"
+            name: "Topics for List A Complementary Studies Courses Taken on Exchange by Engineering Students"
+        -
+            department: "GEOG"
+            code: "203"
+            name: "Environment and Development in a Global Perspective"
+        -
+            department: "GEOG"
+            code: "368"
+            name: "Conservation/Resource Management of the Built Environment"
+        -
+            department: "MSCI"
+            code: "422"
+            name: "Economic Impact of Technological Change and Entrepreneurship"
+        -
+            department: "MSCI"
+            code: "442"
+            name: "Impact of Information Systems on Organizations and Society"
+        -
+            department: "PHIL"
+            code: "226"
+            name: "Biomedical Ethics"
+        -
+            department: "SOC"
+            code: "232"
+            name: "Technology and Social Change"
+        -
+            department: "STV"
+            code: "100"
+            name: "Society, Technology and Values: Introduction"
+        -
+            department: "STV"
+            code: "202"
+            name: "Design and Society"
+        -
+            department: "STV"
+            code: "203"
+            name: "Biotechnology and Society"
+        -
+            department: "STV"
+            code: "205"
+            name: "Cybernetics and Society"
+        -
+            department: "STV"
+            code: "302"
+            name: "Information Technology and Society"
+        -
+            department: "STV"
+            code: "404"
+            name: "Technology in Canadian Society"
+        -
+            department: "SYDE"
+            code: "261"
+            name: "Design, Systems, and Society"
+        -
+            department: "WS"
+            code: "205"
+            name: "Gender, Culture and Technology"
+- 
+    category: "List C - Humanities and Social Sciences"
+    numberRequired: 2
+    notes: "This is only the list of pre-scheduled Humanities and Social Sciences courses that are unlikely to conflict with Engineering schedules. Click <a href=http://ugradcalendar.uwaterloo.ca/default.aspx?pageID=154#ListC--HumanitiesandSocialSciencesCourses>here</a> for a complete list of courses for this category."
+    electives:
+        -
+            department: "ECON"
+            code: "101"
+            name: 
+        -
+            department: "ECON"
+            code: "202"
+            name: 
+        -
+            department: "MSCI"
+            code: "211"
+            name: 
+        -
+            department: "MSCI"
+            code: "311"
+            name: 
+        -
+            department: "PSCI"
+            code: "260"
+            name: 
+        -
+            department: "PSYCH"
+            code: "101"
+            name: 
+        -
+            department: "SOC"
+            code: "101"
+            name: 
+        -
+            department: "ENGL"
+            code: "105A"
+            name: 
+        -
+            department: "HIST"
+            code: "253"
+            name: 
+        -
+            department: "HIST"
+            code: "254"
+            name: 
+        -
+            department: "HIST"
+            code: "275"
+            name: 
+        -
+            department: "PHIL"
+            code: "250A"
+            name: 
+        -
+            department: "PHIL"
+            code: "250B"
+            name: 
+        -
+            department: "PHIL"
+            code: "315"
+            name: 
