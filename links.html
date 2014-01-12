@@ -6,38 +6,50 @@ title: Links | UWaterloo Software Engineering Class of 2016
 <article class="links">
 
     <div class="row">
-        <section class="col-12">
+        <section class="col-8">
             <h1>Useful Links</h1>
             <ul>
                 {% for link in site.data.links %}
                 <li>
-                    <a href="http://{{ link.url }}">
-                        <strong>{{ link.name }}</strong>
-                        <span>{{ link.url }}</span>
-                        <p>{{ link.desc }}</p>
+                    <a href="https://{{ link.url }}">
+                        <span class="link-title">
+                            {{ link.name }}
+                        </span>
+                        <span class="link-url">
+                            https://{{ link.url }}
+                        </span>
+                        <span class="link-desc">
+                            {{ link.desc }}
+                        </span>
                     </a>
                 </li>    
                 {% endfor %}
             </ul>
         </section>
-    </div>
 
-    <div class="row">
-        <section class="col-12">
-            <h1>Student Sites</h1>
-        </section>
-
-        <section>
-            <ul>
+        <section class="col-4">
+            <h1>Members</h1>
+            <table class="member-list">
                 {% for contact in site.data.classmates %}
-                <li class="col-4">
-                    <a href="http://{{ contact.homepage }}">
-                        <strong>{{ contact.name }}</strong>
-                        <span>{{ contact.homepage }}</span>
-                    </a>
-                </li>
+                <tr>
+                    <td class="link-site">
+                        <a href="http://{{ contact.homepage }}">
+                            <span class="link-title">
+                                {{ contact.name }}
+                            </span>
+                            <span class="link-url">
+                                {{ contact.homepage }}
+                            </span>
+                        </a>
+                    </td>
+                    <td class="link-github">
+                        <a href="https://www.github.com/{{ contact.github }}">
+                            Github
+                        </a>
+                    </td>
+                </tr>
                 {% endfor %}
-            </ul>
+            </table>
         </section>
     </div>
 

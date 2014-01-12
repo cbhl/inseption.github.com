@@ -1,12 +1,16 @@
 -
-    name: "Stephen Li"
-    github: "Trinovantes"
-    homepage: "stephenli.ca"
--
-    name: "Victor Lai"
-    github: "Blisse"
-    homepage: "laivictor.com"
+    name: "Christian De Angelis"
+    github: "cdeange"
+    homepage: "www.deange.ca"
 -
     name: "Joshua Kalpin"
     github: "Kapin"
-    homepage: "joshuakalp.in"
+    homepage: "www.joshuakalp.in"
+-
+    name: "Stephen Li"
+    github: "Trinovantes"
+    homepage: "www.stephenli.ca"
+-
+    name: "Victor Lai"
+    github: "Blisse"
+    homepage: "www.laivictor.com"

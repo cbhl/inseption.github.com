@@ -66,14 +66,14 @@ title: Schedule | UWaterloo Software Engineering Class of 2016
             {% if category.notes != null %}
                 <p>{{ category.notes }}</p>
             {% endif %}
-            <ul>
+            <table>
                 {% for course in category.electives %}
-                <li>
-                    <strong>{{ course.department }} {{ course.code }}</strong>
-                    <span>{{ course.name }}</span>
-                </li>
+                <tr>
+                    <td class="course-code">{{ course.department }} {{ course.code }}</td>
+                    <td class="course-title">{{ course.name }}</td>
+                </tr>
                 {% endfor %}
-            </ul>
+            </table>
         </aside>
     {% cycle '', '</div>' %}
     {% endfor %}

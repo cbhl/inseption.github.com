@@ -4,5 +4,9 @@
     desc: "Check enrollment status and schedules for classes"
 -
     name: "Quest Login"
-    url: "https://quest.pecs.uwaterloo.ca/psp/SS/"
+    url: "quest.pecs.uwaterloo.ca/psp/SS/"
     desc: "Quest UWaterloo login"
+-
+    name: "UWaterloo Book Store"
+    url: "fortuna.uwaterloo.ca/cgi-bin/cgiwrap/rsic/book#"
+    desc: "UWaterloo Book Store"
