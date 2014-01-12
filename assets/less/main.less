@@ -1,29 +1,47 @@
 @grid-width:    1220px;
 @mobile-width:  960px;
 
-@text-color:    #333;
-@blue:          #314c9c;
-@grey:          rgb(155,161,168);
-@border-color:  #eee;
+
+// Base Colors
+@softengblue:   #314c9c;
+@softenggray:   rgb(155,161,168);
+
+@darkgray:      #333;
+@lightgray:     #eee;
+
+// Display Colors
+@text-color:    @darkgray;
+@link-color:    @softengblue;
+@bg-hl-color:   @lightgray;
+
+@header-color:  @darkgray;
+@border-color:  @lightgray;
+
+// Fonts
+@basic-font-stack:  "Open Sans", sans-serif;
+
+// Elements
 @border:        1px solid @border-color;
 
 @import 'normalize.less';
 @import 'onepcssgrid.less';
 
-//------------------------------------------------------------------------------- General
+//------------------------------------------------------------------------------- 
+//General
 
 body{
-    color:@text-color;
-    font-size:1em;
-    line-height:2em;
+    color       :@text-color;
+    font-size   :1em;
+    font-family : @basic-font-stack;
+    line-height :2em;
 }
 
 a{
-    color:@blue;
+    color :@softengblue;
 }
 
 h1{
-    margin-top:40px;
+    margin-top :48px;
 }
 
 table{
@@ -31,13 +49,13 @@ table{
         transition:0.5s;
         
         &:hover{
-           background:lighten(@border-color, 5%);
+           background :lighten(@border-color, 5%);
         }
 
         td{
-            border:@border;
-            padding:20px;
-            vertical-align:top;
+            border         :@border;
+            padding        :20px;
+            vertical-align :top;
 
             &:not(:first-child){
                 width:15%;
@@ -53,16 +71,17 @@ table{
             }
 
             span{
-                font-size:13px;
-                line-height:20px;
+                font-size:12px;
+                line-height:18px;
             }
         }
     }
 }
 
 ul{
-    list-style:none;
-    padding:0;
+    list-style-type : none;
+    padding         : 0;
+    margin          : 0;
 
     li{
         border-top:@border;
@@ -72,44 +91,47 @@ ul{
         }
 
         a{
-            color:lighten(@text-color, 30%);
-            display:block;
-            padding:20px 40px;
-            text-decoration:none;
-            transition:0.5s;
+            color           :lighten(@text-color, 20%);
+            display         :block;
+            padding         :15px 10px;
+            text-decoration :none;
+            transition      :0.5s;
 
-            strong,
-            span,
-            p{
+            .link-title,
+            .link-url,
+            .link-desc{
                 display:block;
             }
 
-            strong{
+            .link-title{
                 font-size:24px;
-                margin-bottom:5px;
+                font-weight: bold;
+                margin-bottom:4px;
             }
 
-            span{
-                color:@blue;
-                font-size:13px;
-                font-style:normal;
-                line-height:1em;
+            .link-url{
+                color       :@softengblue;
+                font-size   :11px;
+                font-style  :normal;
+                line-height :1em;
             }
 
-            p{
-                margin:10px 0 0;
-                padding-left:20px;
+            .link-desc{
+                margin       : 10px 0 0;
+                padding-left : 5px;
+                font-size: 16px;
             }
             
             &:hover{
-                background:@border-color;
-                color:@text-color;
+                background : @bg-hl-color;
+                color      : @text-color;
             }
         }
     }
 }
 
-//------------------------------------------------------------------------------- Menu
+//------------------------------------------------------------------------------- 
+//Menu
 
 .menu{
     border-bottom:@border;
@@ -121,25 +143,51 @@ ul{
             border:none;
 
             a{
-                background-repeat:no-repeat;
-                background-position:center 50px;
-                display:block;
-                font-weight:bold;
-                outline:none;
-                padding:134px 0 30px;
-                text-align:center;
-
-                &.home{
-                    background-image:url(../img/home.png);
+                &.icon-home{
+                    background-image :url(/assets/img/home.png);
+                    background-image :url(/assets/img/home.svg);
                 }
 
-                &.schedule{
-                    background-image:url(../img/schedule.png);
+                &.icon-schedule{
+                    background-image :url(/assets/img/calendar.png);
+                    background-image :url(/assets/img/calendar.svg);   
                 }
 
-                &.links{
-                    background-image:url(../img/links.png);
+                &.icon-link{
+                    background-image :url(/assets/img/link.png);
+                    background-image :url(/assets/img/link.svg);
                 }
+
+                display        :block;
+                font-weight    :bold;
+                font-size      : 1em;
+                color          :@header-color;
+
+                padding-top    : 116px;
+                text-align     :center;
+                text-transform : uppercase;
+
+                height         : 50px;
+
+                &.menu-icon{
+                    background-size: 100% 50px;
+                    background-position: center 50px;
+                    background-repeat: no-repeat;
+                }
+
+                @media (max-width:@mobile-width){
+                    height: 32px;
+
+                    &.menu-icon{
+                        background: none;
+                        padding-top: 0;
+                    }
+                }
+
+                &:hover {
+
+                }
+
             }
         }
     }
@@ -150,68 +198,163 @@ ul{
     border-top:@border;
 
     p{
-        color:@grey;
-        font-size:13px;
-        padding:20px 0;
-        text-align:center;
+        color      :@text-color;
+        font-size  :13px;
+        padding    :20px 0;
+        text-align :center;
     }
 }
 
-//------------------------------------------------------------------------------- Homepage
+//------------------------------------------------------------------------------- 
+//Homepage
 
-.intro{
+.home{
     margin:80px 0;
 
-    h1.inseption{
-        background:no-repeat center;
-        background-size:100% auto;
-        background-image:url(../img/inseption.png);
-        background-image:url(../img/inseption.svg);
-        margin:auto;
-        margin-bottom:40px;
-        width:100%; height:80px;
-        text-indent:-9999px;
+    h1.home-inseptionlogo{
+        background       :no-repeat center;
+        background-image :url(/assets/img/inseption.png);
+        background-image :url(/assets/img/inseption.svg);
+        margin           :auto;
+        margin-bottom    :40px;
+
+        height           : 200px;
+
+        background-size  : 100% auto;
+        text-indent      :-9999px;
+    }
+
+    @media (max-width:@mobile-width){
+        h1.home-inseptionlogo{
+            height: 135px;
+        }
     }
     
-    h2{
-        color:rgb(155,161,168);
-        margin:0;
-        text-align:center;
+    p.home-description{
+        color      : @text-color;
+        margin     :0;
+        text-align :center;
     }
 }
 
-//------------------------------------------------------------------------------- Schedule
+//------------------------------------------------------------------------------- 
+//Schedule
 
 .schedule{
     table{
+        width: 100%;
+
         tr{
             td{
                 &.elective{
                 }
+
+                overflow:hidden;
+                padding: 6px 8px;
+                
+                &.course-code,
+                &.course-title{
+
+                    @media (max-width:@mobile-width){
+                        float : none;
+                    }
+                }
+
+                &.course-code{
+                    font-weight   : bold;
+                    white-space: nowrap;
+                    padding: 8px;
+                }
+
+                &.course-title{
+                    text-overflow : ellipsis;
+                    padding: 5px;
+                    width: 100%;
+                }
             }
         }
     }
+}
 
-    ul{
-        li{
-            overflow:hidden;
-            padding:5px 0;
-            
-            strong,
-            span{
-                display:inline-block;
+//------------------------------------------------------------------------------- 
+//Link
 
-                @media (max-width:@mobile-width){
-                    display:inline;
-                    float:none;
-                }
+table.member-list{
+    width: 100%;
+
+    tr > td{
+
+        padding: 0;
+        margin: 0;
+        border: none;
+
+        a{
+            display         :block;
+
+            color           :lighten(@text-color, 20%);
+            text-decoration :none;
+            transition      :0.5s;
+
+            width: 100%;
+            height: 100%;
+
+            .link-title{
+                font-size:24px;
+                font-weight: bold;
+                margin-bottom:10px;
             }
 
-            strong{
-                text-align:right;
-                padding-right:5px;
-                width:90px;
+            .link-url{
+                color       :@softengblue;
+                font-size   :11px;
+                font-style  :normal;
+                line-height :1em;
+            }
+
+            .link-desc{
+                margin       : 10px 0 0;
+                padding-left : 5px;
+                font-size: 16px;
+            }
+            
+            &:hover{
+                background : @bg-hl-color;
+                color      : @text-color;
             }
         }
+
+        &.link-site a{
+            margin: 0;
+            padding: 20px;
+            width: 100%;
+        }
+
+        &.link-github a{
+            background       : no-repeat center;
+            background-image : url(/assets/img/github.png);
+            background-image : url(/assets/img/github.svg);
+            opacity:0.8;
+
+            margin           : 0;
+            padding: 0;
+
+            background-size  : 50% auto;
+            height           : 75px;
+            width            : 75px;
+            text-indent      : -9999px;
+            
+            vertical-align: center;
+            text-align: center;
+
+            &:hover {
+                opacity:0.3;
+            }
+        }
+
+        @media (max-width:@mobile-width){
+            a{
+            }
+        }
+    
     }
 }
