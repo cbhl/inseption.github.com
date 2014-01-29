@@ -228,56 +228,56 @@
     electives: 
         - 
             department: "BIOL"
-            code: "130"
-            name: ""
+            code: "130/130L"
+            name: "Introductory Cell Biology/Cell Biology Laboratory"
         - 
             department: "BIOL"
             code: "239"
-            name: ""
+            name: "Genetics"
         - 
             department: "BIOL"
             code: "240"
-            name: ""
+            name: "Fundamentals of Microbiology"
         - 
             department: "BIOL"
             code: "273"
-            name: ""
+            name: "Principles of Human Physiology 1"
         - 
             department: "CHE"
             code: "161"
-            name: ""
+            name: "Engineering Biology"
         - 
             department: "CHEM"
-            code: "262"
-            name: ""
+            code: "262/262L"
+            name: "Organic Chemistry for Engineering and Bioinformatics Students/Organic Chemistry Labratory for Engineering Students"
         - 
             department: "EARTH"
-            code: "121"
-            name: ""
+            code: "121/121L"
+            name: "Introductory Earth Sciences"
         - 
             department: "PHYS"
             code: "234"
-            name: ""
+            name: "Quantum Physics 1"
         - 
             department: "PHYS"
             code: "246"
-            name: ""
+            name: "Physical Optics"
         - 
             department: "PHYS"
             code: "275"
-            name: ""
+            name: "Planets"
         - 
             department: "PHYS"
             code: "334"
-            name: ""
+            name: "Quantum Physics 2"
         - 
             department: "PHYS"
             code: "375"
-            name: ""
+            name: "Astrophysics 2 - Stars and Galaxies"
         - 
             department: "ECE"
             code: "209"
-            name: ""
+            name: "Electronic and Electrical Properties of Materials"
 - 
     category: "Communication"
     numberRequired: 1
