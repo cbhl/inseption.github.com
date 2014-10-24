@@ -7,7 +7,7 @@ title: Classmates
     <div class="row">
 
         <div class="col-12">
-            <h1>Members</h1>
+            <h1>{{ page.title }}</h1>
 
             {% for member in site.github.organization_members %}
             {% cycle '<div class="row">', '', '', '' %}
@@ -16,8 +16,10 @@ title: Classmates
                     <h2>{{ member.name }}</h2>
                     <ul>
                         <li class="github"><span class="octicon octicon-mark-github"></span><a href="{{ member.html_url }}">{{ member.login }}</a></li>
+                        <!--
                         <li class="homepage"><span class="octicon octicon-link"></span><a href="{{ member.blog }}">{{ member.blog | replace_first:'http://','' | replace_first:'https://','' }}</a></li>
                         <li class="location"><span class="octicon octicon-location"></span>{{ member.location }}</li>
+                        -->
                     </ul>
                 </div>
             {% cycle '', '', '', '</div>' %}
