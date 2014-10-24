@@ -1,30 +1,24 @@
 @grid-width: 1220px;
 @mobile-width: 960px;
 
-
 // Base Colors
 @softengblue: #314c9c;
-@softenggray: rgb(155,161,168);
-
 @darkgray: #333;
 @lightgray: #eee;
 
 // Display Colors
 @text-color: @darkgray;
 @link-color: @softengblue;
-@bg-hl-color: @lightgray;
-
-@header-color: @darkgray;
-@border-color: @lightgray;
 
 // Fonts
 @basic-font-stack: "Open Sans", sans-serif;
 
 // Elements
-@border: 1px solid @border-color;
+@border: 1px solid @lightgray;
 
 @import 'normalize.less';
 @import 'onepcssgrid.less';
+@import '../octicons/octicons.css';
 
 //------------------------------------------------------------------------------
 // General
@@ -49,7 +43,7 @@ table{
         transition: 0.5s;
 
         &:hover{
-           background: lighten(@border-color, 5%);
+           background: lighten(@lightgray, 5%);
         }
 
         td{
@@ -62,7 +56,7 @@ table{
             }
 
             &.inactive{
-                background: @border-color;
+                background: @lightgray;
             }
 
             strong,
@@ -97,6 +91,11 @@ ul{
             text-decoration: none;
             transition: 0.5s;
 
+            &:hover{
+                background: @lightgray;
+                color: @text-color;
+            }
+
             .link-title,
             .link-url,
             .link-desc{
@@ -120,11 +119,6 @@ ul{
                 margin: 10px 0 0;
                 padding-left: 5px;
                 font-size: 16px;
-            }
-
-            &:hover{
-                background: @bg-hl-color;
-                color: @text-color;
             }
         }
     }
@@ -166,7 +160,7 @@ ul{
                 display: block;
                 font-weight: bold;
                 font-size: 1em;
-                color: @header-color;
+                color: @darkgray;
 
                 padding-top: 116px;
                 text-align: center;
@@ -213,7 +207,7 @@ ul{
 //------------------------------------------------------------------------------
 // Homepage
 
-.home{
+article.home{
     margin: 80px 0;
 
     h1.home-inseptionlogo{
@@ -245,7 +239,7 @@ ul{
 //------------------------------------------------------------------------------
 // Schedule
 
-.schedule{
+article.schedule{
     table{
         width: 100%;
 
@@ -276,8 +270,48 @@ ul{
 }
 
 //------------------------------------------------------------------------------
+// Links
+
+//------------------------------------------------------------------------------
 // Classmates
 
+article.classmates{
+    .member{
+        img{
+            display: block;
+            border-radius: 5px;
+            max-width: 200px;
+        }
+
+        h2{
+            text-decoration: none;
+        }
+
+        ul{
+            li{
+                color: lighten(@text-color, 20%);
+                border: none;
+                padding-left: 30px;
+
+                span.octicon{
+                    float: left;
+                    line-height: 2em;
+                    margin-left: -30px;
+                    width: 24px;
+                    text-align: center;
+                }
+
+                a{
+                    background: none;
+                    display: inline;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+/*
 table.member-list{
     width: 100%;
 
@@ -315,7 +349,7 @@ table.member-list{
             }
 
             &:hover{
-                background: @bg-hl-color;
+                background: @lightgray;
                 color: @text-color;
             }
         }
@@ -355,3 +389,4 @@ table.member-list{
 
     }
 }
+*/

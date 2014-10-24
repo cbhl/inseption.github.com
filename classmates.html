@@ -3,31 +3,26 @@ layout: default
 title: Classmates
 ---
 
-<article class="links">
+<article class="classmates">
     <div class="row">
-        <section class="col-4">
+
+        <div class="col-12">
             <h1>Members</h1>
-            <table class="member-list">
-                {% for contact in site.data.classmates %}
-                <tr>
-                    <td class="link-site">
-                        <a href="{{ contact.homepage }}">
-                            <span class="link-title">
-                                {{ contact.name }}
-                            </span>
-                            <span class="link-url">
-                                {{ contact.homepage }}
-                            </span>
-                        </a>
-                    </td>
-                    <td class="link-github">
-                        <a href="https://www.github.com/{{ contact.github }}">
-                            Github
-                        </a>
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
-        </section>
+
+            {% for member in site.github.organization_members %}
+            {% cycle '<div class="row">', '', '', '' %}
+                <div class="col-3 member">
+                    <img src="{{ member.avatar_url }}" alt="Gravatar">
+                    <h2>{{ member.name }}</h2>
+                    <ul>
+                        <li class="github"><span class="octicon octicon-mark-github"></span><a href="{{ member.html_url }}">{{ member.login }}</a></li>
+                        <li class="homepage"><span class="octicon octicon-link"></span><a href="{{ member.blog }}">{{ member.blog | replace_first:'http://','' | replace_first:'https://','' }}</a></li>
+                        <li class="location"><span class="octicon octicon-location"></span>{{ member.location }}</li>
+                    </ul>
+                </div>
+            {% cycle '', '', '', '</div>' %}
+            {% endfor %}
+        </div>
+
     </div>
 </article>
