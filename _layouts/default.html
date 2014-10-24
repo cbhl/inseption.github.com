@@ -2,38 +2,42 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="viewport" content="width=device-width">
-    
-    <!-- 
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!--
     <link rel="stylesheet" href="/assets/css/main.css">
      -->
     <link rel="stylesheet/less" href="/assets/less/main.less">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="/assets/js/less.js"></script>
-
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="/assets/js/html5.js"></script>
-    <![endif]-->
+    <script type="text/javascript" src="/assets/js/libs/less-1.5.0.js"></script>
 </head>
 <body>
 
 <header class="menu">
     <nav class="grid">
         <ul class="row">
-            <li class="col-4">
+            <li class="col-3">
                 <a href="/" class="menu-icon icon-home">
                     Home
                 </a>
             </li>
-            <li class="col-4">
+            <li class="col-3">
                 <a href="/schedule.html" class="menu-icon icon-schedule">
                     Courses
                 </a>
             </li>
-            <li class="col-4">
-                <a href="/links.html" class="menu-icon icon-link">
+            <li class="col-3">
+                <a href="/links.html" class="menu-icon icon-links">
                     Links
+                </a>
+            </li>
+            <li class="col-3">
+                <a href="/classmates.html" class="menu-icon icon-classmates">
+                    Classmates
                 </a>
             </li>
         </ul>
@@ -46,12 +50,9 @@
 
 <footer class="copyright">
     <div class="grid">
-        <p class="col-12">Copyright &copy; 2013&mdash;2014 &nbsp;<a href="/">www.se2016.com</a>&nbsp; All Rights Reserved</p>
+        <p class="col-12">Copyright &copy; 2013&mdash;2014 &nbsp;<a href="/">{{ site.url }}</a>&nbsp; All Rights Reserved</p>
     </div>
 </footer>
-
-<script type="text/javascript" src="/assets/js/jquery.js"/>
-<script type="text/javascript" src="/assets/js/main.js"/>
 
 </body>
 </html>

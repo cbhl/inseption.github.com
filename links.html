@@ -1,55 +1,24 @@
 ---
 layout: default
-title: Links | UWaterloo Software Engineering Class of 2016
+title: Links
 ---
 
 <article class="links">
 
     <div class="row">
-        <section class="col-8">
+        <section class="col-12">
             <h1>Useful Links</h1>
             <ul>
                 {% for link in site.data.links %}
                 <li>
-                    <a href="https://{{ link.url }}">
-                        <span class="link-title">
-                            {{ link.name }}
-                        </span>
-                        <span class="link-url">
-                            https://{{ link.url }}
-                        </span>
-                        <span class="link-desc">
-                            {{ link.desc }}
-                        </span>
+                    <a href="{{ link.url }}">
+                        <span class="link-title">{{ link.name }}</span>
+                        <span class="link-url">{{ link.url }}</span>
+                        <span class="link-desc">{{ link.desc }}</span>
                     </a>
-                </li>    
+                </li>
                 {% endfor %}
             </ul>
-        </section>
-
-        <section class="col-4">
-            <h1>Members</h1>
-            <table class="member-list">
-                {% for contact in site.data.classmates %}
-                <tr>
-                    <td class="link-site">
-                        <a href="http://{{ contact.homepage }}">
-                            <span class="link-title">
-                                {{ contact.name }}
-                            </span>
-                            <span class="link-url">
-                                {{ contact.homepage }}
-                            </span>
-                        </a>
-                    </td>
-                    <td class="link-github">
-                        <a href="https://www.github.com/{{ contact.github }}">
-                            Github
-                        </a>
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
         </section>
     </div>
 

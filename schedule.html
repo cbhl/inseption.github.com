@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Schedule | UWaterloo Software Engineering Class of 2016
+title: Schedule
 ---
 
 <article class="schedule">
@@ -77,5 +77,29 @@ title: Schedule | UWaterloo Software Engineering Class of 2016
         </aside>
     {% cycle '', '</div>' %}
     {% endfor %}
-    
+
 </article>
+
+<script>
+var electives = [
+    {% for category in site.data.electives %}
+    {
+        name: "{{ category.category }}",
+        numberRequired: "{{ category.numberRequired }}",
+        electives: [
+            {% for course in category.electives %}
+            {
+                department: "{{ course.department }}",
+                code: "{{ course.code }}",
+                name: "{{ course.name }}"
+            },
+            {% endfor %}
+        ]
+    },
+    {% endfor %}
+];
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/assets/js/app.js"></script>

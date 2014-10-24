@@ -1,0 +1,33 @@
+---
+layout: default
+title: Classmates
+---
+
+<article class="links">
+    <div class="row">
+        <section class="col-4">
+            <h1>Members</h1>
+            <table class="member-list">
+                {% for contact in site.data.classmates %}
+                <tr>
+                    <td class="link-site">
+                        <a href="{{ contact.homepage }}">
+                            <span class="link-title">
+                                {{ contact.name }}
+                            </span>
+                            <span class="link-url">
+                                {{ contact.homepage }}
+                            </span>
+                        </a>
+                    </td>
+                    <td class="link-github">
+                        <a href="https://www.github.com/{{ contact.github }}">
+                            Github
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </section>
+    </div>
+</article>

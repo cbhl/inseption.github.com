@@ -1,12 +1,28 @@
 -
     name: "Class Schedule Utility"
-    url: "www.adm.uwaterloo.ca/infocour/CIR/SA/under.html"
+    url:  "http://www.adm.uwaterloo.ca/infocour/CIR/SA/under.html"
     desc: "Check enrollment status and schedules for classes"
 -
-    name: "Quest Login"
-    url: "quest.pecs.uwaterloo.ca/psp/SS/"
-    desc: "Quest UWaterloo login"
+    name: "University of Waterloo Quest Login"
+    url:  "https://quest.pecs.uwaterloo.ca/psp/SS/"
+    desc:
 -
-    name: "UWaterloo Book Store"
-    url: "fortuna.uwaterloo.ca/cgi-bin/cgiwrap/rsic/book#"
-    desc: "UWaterloo Book Store"
+    name: "University of Waterloo Book Store"
+    url:  "https://fortuna.uwaterloo.ca/cgi-bin/cgiwrap/rsic/book"
+    desc:
+-
+    name: "A Hacker's Guide to the Bay Area"
+    url:  "http://islandofatlas.net/2013/10/04/a-hackers-guide-to-the-bay-area.html"
+    desc: "Everything you need to know before doing internships in the Bay Area (housing, food, transportation, etc.)"
+-
+    name: "Unofficial Waterloo USA Intern Guide"
+    url:  "https://www.student.cs.uwaterloo.ca/~xzytay/"
+    desc: "Another website containing everything you need to know before doing internships in the States (written by Waterloo students)"
+-
+    name: "Unofficial UWaterloo Intern USA Tax Guide"
+    url:  "https://csclub.uwaterloo.ca/~f2fung/taxguide.html"
+    desc: "Helpful information for filling out your US and Canadian taxes after doing an internship in the States"
+-
+    name: "Data Structure Visualizations"
+    url:  "http://www.cs.usfca.edu/~galles/visualization/Algorithms.html"
+    desc:
