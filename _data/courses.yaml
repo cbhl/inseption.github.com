@@ -1,6 +1,6 @@
 -
     name: "1A"
-    term: 2
+    season: 2
     numberOfElectives: 0
     requiredCourses:
         -
@@ -29,7 +29,7 @@
             name: "Calculus 1 for Engineering"
 -
     name: "1B"
-    term: 0
+    season: 0
     numberOfElectives: 0
     requiredCourses:
         -
@@ -54,7 +54,7 @@
             name: "Calculus 2 for Engineering"
 -
     name: "2A"
-    term: 2
+    season: 2
     numberOfElectives: 1
     requiredCourses:
         -
@@ -75,7 +75,7 @@
             name: "Statistics for Software Engineering"
 -
     name: "2B"
-    term: 1
+    season: 1
     numberOfElectives: 1
     requiredCourses:
         -
@@ -100,7 +100,7 @@
             name: "Introduction to Combinatorics"
 -
     name: "3A"
-    term: 0
+    season: 0
     numberOfElectives: 1
     requiredCourses:
         -
@@ -121,7 +121,7 @@
             name: "Introduction to Feedback Control"
 -
     name: "3B"
-    term: 2
+    season: 2
     numberOfElectives: 2
     requiredCourses:
         -
@@ -142,7 +142,7 @@
             name: "Software Requirements Specification and Analysis"
 -
     name: "4A"
-    term: 1
+    season: 1
     numberOfElectives: 2
     requiredCourses:
         -
@@ -159,7 +159,7 @@
             name: "Design Project 1"
 -
     name: "4B"
-    term: 0
+    season: 0
     numberOfElectives: 4
     requiredCourses:
         -

@@ -5,51 +5,41 @@ title: Schedule
 
 <article class="schedule">
     <div class="row">
-
-        <section class="col-12">
+        {% raw  %}
+        <section class="col-12" id="schedule-builder" ng-app="ScheduleBuilder" ng-controller="ScheduleBuilderController">
             <h1>Schedule</h1>
-            <p>This table is provided for your convenience and may not be up to date.</p>
+            <noscript>
+                JavaScript is Required
+            </noscript>
             <table>
-                {% for term in site.data.courses reversed %}
-                <tr data-term="{{ term.term }}">
-                    <td>
+                <tr ng-repeat="term in schedule">
+                    <td ng-switch="term.season">
                         <strong>{{ term.name }}</strong>
-                        <span>
-                            {% case term.term %}
-                            {% when 0 %}
-                                Winter
-                            {% when 1 %}
-                                Spring
-                            {% when 2 %}
-                                Fall
-                            {% endcase %}
-                        </span>
+                        <span ng-switch-when="0">Winter</span>
+                        <span ng-switch-when="1">Spring</span>
+                        <span ng-switch-when="2">Fall</span>
                     </td>
-
-                    {% for course in term.requiredCourses %}
-                    <td>
+                    <td ng-repeat="course in term.requiredCourses">
                         <strong>{{ course.department }} {{ course.code }}</strong>
                         <span>{{ course.name }}</span>
                     </td>
-                    {% endfor %}
-
-                    {% for i in (1..term.numberOfElectives) %}
-                    <td class="elective">
-                        <span>Elective</span>
+                    <td class="elective" ng-repeat="elective in term.electives">
+                        <input
+                            type="text"
+                            placeholder="Elective"
+                            autocomplete="off"
+                            ng-model="term.electives[$index].value"
+                            typeahead="elective as (elective.code) for elective in electives | filter:$viewValue"
+                            typeahead-on-select="saveSchedule()"
+                            typeahead-template-url="/assets/templates/course.html" />
+                        <span>{{ term.electives[$index].value.name }}</span>
                     </td>
-                    {% endfor %}
-
-                    {% assign leftover = 6 (|minus:term.requiredCourses.size) (|minus:term.numberOfElectives) %}
-                    {% for i in (1..leftover) %}
-                    <td class="inactive">
-                        &nbsp;
+                    <td class="inactive" ng-repeat="i in [] | range:(6 - term.requiredCourses.length - term.electives.length)">
                     </td>
-                    {% endfor %}
-
                 </tr>
-                {% endfor %}
             </table>
         </section>
+        {% endraw %}
     </div>
 
     <div class="row">
@@ -83,11 +73,23 @@ title: Schedule
 <script>
 var electives = [
     {% for category in site.data.electives %}
+        {% for course in category.electives %}
+        {
+            code: "{{ course.department }} {{ course.code }}",
+            name: "{{ course.name }}"
+        },
+        {% endfor %}
+    {% endfor %}
+];
+
+var schedule = [
+    {% for term in site.data.courses reversed %}
     {
-        name: "{{ category.category }}",
-        numberRequired: "{{ category.numberRequired }}",
-        electives: [
-            {% for course in category.electives %}
+        name: "{{ term.name }}",
+        season: {{ term.season }},
+        numberOfElectives: {{ term.numberOfElectives }},
+        requiredCourses: [
+            {% for course in term.requiredCourses %}
             {
                 department: "{{ course.department }}",
                 code: "{{ course.code }}",
@@ -100,6 +102,7 @@ var electives = [
 ];
 </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.5.0.js"></script>
 <script src="/assets/js/app.js"></script>
