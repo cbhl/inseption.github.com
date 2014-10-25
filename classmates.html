@@ -9,20 +9,22 @@ title: Classmates
         <div class="col-12">
             <h1>{{ page.title }}</h1>
 
-            {% for member in site.github.organization_members %}
-            {% cycle '<div class="row">', '', '', '' %}
-                <div class="col-3 member">
+            {% for member in site.data.classmates %}
+            {% cycle '<div class="row">', '', '', '', '', '' %}
+                <div class="col-2 member">
                     <img src="{{ member.avatar_url }}" alt="Gravatar">
-                    <!-- <h2>{{ member.name }}</h2> -->
+                    <h2>{{ member.name }}</h2>
                     <ul>
-                        <li class="github"><span class="octicon octicon-mark-github"></span><a href="{{ member.html_url }}">{{ member.login }}</a></li>
-                        <!--
-                        <li class="homepage"><span class="octicon octicon-link"></span><a href="{{ member.blog }}">{{ member.blog | replace_first:'http://','' | replace_first:'https://','' }}</a></li>
-                        <li class="location"><span class="octicon octicon-location"></span>{{ member.location }}</li>
-                        -->
+                        <li class="github"><span class="octicon octicon-mark-github"></span><a href="{{ member.github_url }}">{{ member.github_name }}</a></li>
+                        {% if member.website != '' and member.website != nil %}
+                            <li class="homepage"><span class="octicon octicon-link"></span><a href="{{ member.website }}">{{ member.website | replace_first:'http://','' | replace_first:'https://','' }}</a></li>
+                        {% endif %}
+                        {% if member.location != '' and member.location != nil %}
+                            <li class="location"><span class="octicon octicon-location"></span>{{ member.location }}</li>
+                        {% endif %}
                     </ul>
                 </div>
-            {% cycle '', '', '', '</div>' %}
+            {% cycle '', '', '', '', '', '</div>' %}
             {% endfor %}
         </div>
 
