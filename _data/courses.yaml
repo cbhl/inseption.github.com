@@ -73,6 +73,10 @@
             department: "STAT"
             code: "206"
             name: "Statistics for Software Engineering"
+        -
+            department: "CHEM"
+            code: "102"
+            name: "Chemistry for Engineers"
 -
     name: "2B"
     season: 1
