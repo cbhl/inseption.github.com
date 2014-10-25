@@ -16,6 +16,8 @@ app.filter('range', function() {
 });
 
 app.controller("ScheduleBuilderController", function ($scope) {
+    $scope.electives = window.electives;
+
     window.schedule.forEach(function(term){
         term.electives = [];
         for (var i = term.numberOfElectives - 1; i >= 0; i--) {
@@ -27,6 +29,6 @@ app.controller("ScheduleBuilderController", function ($scope) {
         window.localStorage[STORAGE_KEY] = JSON.stringify($scope.schedule);
     };
 
-    $scope.electives = window.electives;
-    $scope.schedule  = JSON.parse(window.localStorage[STORAGE_KEY] || window.schedule);;
+    var storedSchedule = window.localStorage[STORAGE_KEY];
+    $scope.schedule = (storedSchedule && JSON.parse(storedSchedule)) || window.schedule;
 });
