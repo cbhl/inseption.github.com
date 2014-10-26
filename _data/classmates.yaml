@@ -19,4 +19,7 @@
 - {avatar_url: 'https://avatars.githubusercontent.com/u/458691?v=2', company: '',
   github_name: Trinovantes, github_url: 'https://github.com/Trinovantes', location: 'Waterloo,
     Canada', name: Stephen Li, website: 'https://www.stephenli.ca'}
+- {avatar_url: 'https://avatars.githubusercontent.com/u/1432304?v=2', company: '',
+  github_name: Blisse, github_url: 'https://github.com/Blisse', location: 'Toronto,
+    Ontario', name: Victor Lai, website: www.laivictor.com}
 
