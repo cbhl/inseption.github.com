@@ -31,7 +31,7 @@ body{
 }
 
 a{
-    color: @softengblue;
+    color: @link-color;
 }
 
 h1{
@@ -43,7 +43,7 @@ table{
         transition: 0.5s;
 
         &:hover{
-           background: lighten(@lightgray, 5%);
+            background: lighten(@lightgray, 5%);
         }
 
         td{
@@ -86,38 +86,13 @@ ul{
         a{
             color: lighten(@text-color, 20%);
             display: block;
-            padding: 15px 10px;
+            padding: 20px;
             text-decoration: none;
             transition: 0.5s;
 
             &:hover{
                 background: @lightgray;
                 color: @text-color;
-            }
-
-            .link-title,
-            .link-url,
-            .link-desc{
-                display: block;
-            }
-
-            .link-title{
-                font-size: 24px;
-                font-weight: bold;
-                margin-bottom: 4px;
-            }
-
-            .link-url{
-                color: @softengblue;
-                font-size: 11px;
-                font-style: normal;
-                line-height: 1em;
-            }
-
-            .link-desc{
-                margin: 10px 0 0;
-                padding-left: 5px;
-                font-size: 16px;
             }
         }
     }
@@ -311,6 +286,35 @@ ul.typeahead.dropdown-menu{
 
 //------------------------------------------------------------------------------
 // Links
+
+article.links{
+    ul{
+        li{
+            a{
+                h2{
+                    margin: 0 0 10px;
+                }
+
+                .link-url,
+                .link-desc{
+                    display: block;
+                }
+
+                .link-desc{
+                    font-size: 15px;
+                    line-height: 24px;
+                    margin-bottom: 20px;
+                }
+
+                .link-url{
+                    color: @link-color;
+                    font-size: 13px;
+                    line-height: 1em;
+                }
+            }
+        }
+    }
+}
 
 //------------------------------------------------------------------------------
 // Classmates

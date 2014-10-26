@@ -1,28 +1,55 @@
 -
-    name: "Class Schedule Utility"
-    url:  "http://www.adm.uwaterloo.ca/infocour/CIR/SA/under.html"
-    desc: "Check enrollment status and schedules for classes"
+    category: "Internships"
+    links:
+        -
+            name: "A Hacker's Guide to the Bay Area"
+            url:  "http://islandofatlas.net/2013/10/04/a-hackers-guide-to-the-bay-area.html"
+            desc: "Everything you need to know before doing internships in the Bay Area (housing, food, transportation, etc.)"
+        -
+            name: "Unofficial Waterloo USA Intern Guide"
+            url:  "https://www.student.cs.uwaterloo.ca/~xzytay/"
+            desc: "Another website containing everything you need to know before doing internships in the States (written by Waterloo students)"
+        -
+            name: "Unofficial UWaterloo Intern USA Tax Guide"
+            url:  "https://csclub.uwaterloo.ca/~f2fung/taxguide.html"
+            desc: "Helpful information for filling out your US and Canadian taxes after doing an internship in the States"
+        -
+            name: "who is hiring?"
+            url:  "http://hnhiring.me/"
+            desc: "Comments from the monthly \"Who is hiring?\" posts on Hacker News"
+
 -
-    name: "University of Waterloo Quest Login"
-    url:  "https://quest.pecs.uwaterloo.ca/psp/SS/"
-    desc:
+    category: "Programming Related"
+    links:
+        -
+            name: "Data Structure Visualizations"
+            url:  "http://www.cs.usfca.edu/~galles/visualization/Algorithms.html"
+            desc: "Visualizations on common algorithms seen in class (AVL tree, heaps, graph traversals, etc.) "
+        -
+            name: "Algomation"
+            url:  "http://www.algomation.com/"
+            desc: "Another website with visualizations on common algorithms seen in class"
+        -
+            name: "A Programmer's Guide to Data Mining"
+            url:  "http://guidetodatamining.com/"
+            desc: "A free ebook on data mining that focuses on learning through doing approach (Python)"
+        -
+            name: "Game Programming Patterns"
+            url:  "http://gameprogrammingpatterns.com/index.html"
+            desc: "A free ebook on common software design patterns in video games"
 -
-    name: "University of Waterloo Book Store"
-    url:  "https://fortuna.uwaterloo.ca/cgi-bin/cgiwrap/rsic/book"
-    desc:
--
-    name: "A Hacker's Guide to the Bay Area"
-    url:  "http://islandofatlas.net/2013/10/04/a-hackers-guide-to-the-bay-area.html"
-    desc: "Everything you need to know before doing internships in the Bay Area (housing, food, transportation, etc.)"
--
-    name: "Unofficial Waterloo USA Intern Guide"
-    url:  "https://www.student.cs.uwaterloo.ca/~xzytay/"
-    desc: "Another website containing everything you need to know before doing internships in the States (written by Waterloo students)"
--
-    name: "Unofficial UWaterloo Intern USA Tax Guide"
-    url:  "https://csclub.uwaterloo.ca/~f2fung/taxguide.html"
-    desc: "Helpful information for filling out your US and Canadian taxes after doing an internship in the States"
--
-    name: "Data Structure Visualizations"
-    url:  "http://www.cs.usfca.edu/~galles/visualization/Algorithms.html"
-    desc:
+    category: "University"
+    links:
+        -
+            name: "Class Schedule Utility"
+            url:  "http://www.adm.uwaterloo.ca/infocour/CIR/SA/under.html"
+            desc: "Check enrollment status and schedules for undergraduate classes"
+        -
+            name: "Quest Login"
+            url:  "https://quest.pecs.uwaterloo.ca/psp/SS/"
+        -
+            name: "Book Store"
+            url:  "https://fortuna.uwaterloo.ca/cgi-bin/cgiwrap/rsic/book"
+        -
+            name: "Jobmine Login"
+            url:  "https://jobmine.ccol.uwaterloo.ca/psp/SS/?cmd=login"

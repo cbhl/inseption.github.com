@@ -5,21 +5,29 @@ title: Links
 
 <article class="links">
 
-    <div class="row">
-        <section class="col-12">
-            <h1>Useful Links</h1>
+
+    {% for category in site.data.links %}
+    {% cycle '<div class="row">', '' %}
+        <section class="col-6">
+            <h1>{{ category.category }}</h1>
             <ul>
-                {% for link in site.data.links %}
+                {% for link in category.links %}
                 <li>
                     <a href="{{ link.url }}">
-                        <span class="link-title">{{ link.name }}</span>
+                        <h2>{{ link.name }}</h2>
+                        {% if link.desc != nil %}
+                            <span class="link-desc">{{ link.desc }}</span>
+                        {% endif %}
                         <span class="link-url">{{ link.url }}</span>
-                        <span class="link-desc">{{ link.desc }}</span>
                     </a>
                 </li>
                 {% endfor %}
             </ul>
         </section>
+    {% cycle '', '</div>' %}
+    {% endfor %}
+
+
     </div>
 
 </article>
