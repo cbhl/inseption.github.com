@@ -17,7 +17,11 @@ title: Classmates
                     <ul>
                         <li class="github"><span class="octicon octicon-mark-github"></span><a href="{{ member.github_url }}">{{ member.github_name }}</a></li>
                         {% if member.website != '' and member.website != nil %}
-                            <li class="homepage"><span class="octicon octicon-link"></span><a href="{{ member.website }}">{{ member.website | replace_first:'http://','' | replace_first:'https://','' }}</a></li>
+                            {% assign website_url = member.website %}
+                            {% unless website_url contains 'http://' or website_url contains 'https://' %}
+                                {% assign website_url = website_url | prepend:'http://' %}
+                            {% endunless %}
+                            <li class="homepage"><span class="octicon octicon-link"></span><a href="{{ website_url }}">{{ website_url | replace_first:'http://','' | replace_first:'https://','' }}</a></li>
                         {% endif %}
                         {% if member.location != '' and member.location != nil %}
                             <li class="location"><span class="octicon octicon-location"></span>{{ member.location }}</li>
