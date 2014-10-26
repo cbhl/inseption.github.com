@@ -32,7 +32,7 @@
         -
             name: "A Programmer's Guide to Data Mining"
             url:  "http://guidetodatamining.com/"
-            desc: "A free ebook on data mining that focuses on learning through doing approach (Python)"
+            desc: "A free ebook on data mining that focuses on learning-through-doing (Python)"
         -
             name: "Game Programming Patterns"
             url:  "http://gameprogrammingpatterns.com/index.html"
