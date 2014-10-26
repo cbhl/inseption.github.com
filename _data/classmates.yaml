@@ -6,7 +6,7 @@
     Canada', name: Alice Yuan, website: ''}
 - {avatar_url: 'https://avatars.githubusercontent.com/u/1350704?v=2', company: University
     of Waterloo, github_name: alykhank, github_url: 'https://github.com/alykhank',
-  location: 'Toronto, Canada', name: Alykhan Kanji, website: alykhan.com}
+  location: 'Toronto, Canada', name: Alykhan Kanji, website: 'http://alykhan.com'}
 - {avatar_url: 'https://avatars.githubusercontent.com/u/978947?v=2', company: '',
   github_name: Ommy, github_url: 'https://github.com/Ommy', location: Waterloo, name: Fasih
     Awan, website: ''}
