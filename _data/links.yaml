@@ -14,7 +14,7 @@
             url:  "https://csclub.uwaterloo.ca/~f2fung/taxguide.html"
             desc: "Helpful information for filling out your US and Canadian taxes after doing an internship in the States"
         -
-            name: "who is hiring?"
+            name: "Who is hiring?"
             url:  "http://hnhiring.me/"
             desc: "Comments from the monthly \"Who is hiring?\" posts on Hacker News"
 
@@ -37,6 +37,10 @@
             name: "Game Programming Patterns"
             url:  "http://gameprogrammingpatterns.com/index.html"
             desc: "A free ebook on common software design patterns in video games"
+        -
+            name: "Mining of Massive Datasets"
+            url:  "http://mmds.org/"
+            desc: "A free ebook based on Stanford Computer Science course CS246: Mining Massive Datasets"
 -
     category: "University"
     links:
@@ -44,6 +48,10 @@
             name: "Class Schedule Utility"
             url:  "http://www.adm.uwaterloo.ca/infocour/CIR/SA/under.html"
             desc: "Check enrollment status and schedules for undergraduate classes"
+        -
+            name: "UW Flow"
+            url:  "https://uwflow.com/"
+            desc: "Find course reviews made by other students"
         -
             name: "Quest Login"
             url:  "https://quest.pecs.uwaterloo.ca/psp/SS/"
