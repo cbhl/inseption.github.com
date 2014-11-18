@@ -1,13 +1,16 @@
 import requests
 import yaml
 
+MEMBER_API_URL = 'https://api.github.com/orgs/inseption/members'
+OUTPUT_FILE = '../_data/classmates.yaml'
+
 outputArray = []
 
 def getJSON(url):
     r = requests.get(url)
     return r.json()
 
-members = getJSON('https://api.github.com/orgs/inseption/members')
+members = getJSON(MEMBER_API_URL)
 for member in members:
     memberDetails = getJSON(member['url'])
     outputArray.append({
@@ -21,4 +24,7 @@ for member in members:
     });
 
 outputArray.sort(key=lambda x: x['name'])
-print yaml.safe_dump(outputArray, encoding='utf-8', allow_unicode=True)
+
+output = yaml.safe_dump(outputArray, encoding='utf-8', allow_unicode=True)
+f = open(OUTPUT_FILE, 'w')
+f.write(output)

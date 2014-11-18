@@ -12,5 +12,12 @@ Generate Classmates
 ---
 
 ```
-python _scripts/generate_classmates.py > _data/classmates.yaml
+python _scripts/generate_classmates.py
+```
+
+Update Course Offerings
+---
+
+```
+python _scripts/update_course_offerings.py
 ```
