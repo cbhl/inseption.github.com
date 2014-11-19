@@ -25,20 +25,13 @@ app.controller("ScheduleBuilderController", function ($scope) {
 
     // Schedule data
     var storedSchedule = window.localStorage[STORAGE_KEY];
-    var parsedSchedule = JSON.parse(storedSchedule);
-
-    if (parsedSchedule) {
-        $scope.schedule = parsedSchedule;
-    } else {
-        // Generate a fresh copy
-        window.schedule.forEach(function (term){
-            term.electives = [];
-            for (var i = term.numberOfElectives - 1; i >= 0; i--) {
-                term.electives.push({value : ""});
-            };
-        });
-        $scope.schedule = window.schedule;
-    }
+    window.schedule.forEach(function (term) {
+        term.electives = [];
+        for (var i = term.numberOfElectives - 1; i >= 0; i--) {
+            term.electives.push({value : ""});
+        };
+    });
+    $scope.schedule = storedSchedule && JSON.parse(storedSchedule) || window.schedule;
 
     // Filter electives
     $('#filter li').click(function (){
