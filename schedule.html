@@ -73,10 +73,10 @@ title: Schedule
                         {% when 2 %}F
                     {% endcase %}
                 {% endfor %}
-                " title="{{ course.description }}" class="elective">
+                " class="elective" title="{{ course.description }}">
                     <td class="course-code">{{ course.department }} {{ course.code }}</td>
                     <td class="course-name">
-                        <h3>{{ course.name }} {% if course.terms_offered == empty %}*{% endif %}</h3>
+                        <h3><a href="{{ course.review_link }}" class="review-link">{{ course.name }}</a>{% if course.terms_offered == empty %} <span title="Unspecified offered terms">*</span>{% endif %}</h3>
                         <ul>
                             {% if course.prerequisites != '' and course.prerequisites != nil %}
                                 <li><strong>Prereq:</strong> {{ course.prerequisites }}</li>
