@@ -225,10 +225,11 @@
 -
     category: "Science"
     numberRequired: 2
+    notes: Some courses have a lab component. You should double check with your academic advisor to see if you need to take the lab component.
     electives:
         -
             department: "BIOL"
-            code: "130/130L"
+            code: "130"
             name: "Introductory Cell Biology/Cell Biology Laboratory"
         -
             department: "BIOL"
@@ -248,11 +249,11 @@
             name: "Engineering Biology"
         -
             department: "CHEM"
-            code: "262/262L"
+            code: "262"
             name: "Organic Chemistry for Engineering and Bioinformatics Students/Organic Chemistry Labratory for Engineering Students"
         -
             department: "EARTH"
-            code: "121/121L"
+            code: "121"
             name: "Introductory Earth Sciences"
         -
             department: "PHYS"

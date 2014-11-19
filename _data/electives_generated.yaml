@@ -1,0 +1,1250 @@
+- category: ATE - CS
+  electives:
+  - antirequisites: null
+    code: '442'
+    department: CS
+    description: An exposure to important concepts and issues in contemporary programming
+      languages. Data types, abstraction, and polymorphism. Program structure. Lambda
+      calculus and functional programming, logic programming, object-oriented programming.
+      Semantics of programming languages. Critical comparison of language features
+      and programming methodologies using examples drawn from a variety of programming
+      languages including Lisp, Prolog, ML, Ada, Smalltalk, Icon, APL, and Lucid.
+      Programming assignments involve the use of some of these languages.
+    name: Principles of Programming Languages
+    prerequisites: CS 240; Computer Science students only
+    review_link: https://uwflow.com/course/cs442
+    terms_offered: [0]
+  - antirequisites: null
+    code: '444'
+    department: CS
+    description: Phases of compilation. Lexical analysis and a review of parsing.
+      Compiler-compilers and translator writing systems. LEX and YACC. Scope rules,
+      block structure, and symbol tables. Runtime stack management. Parameter passage
+      mechanisms. Stack storage organization and templates. Heap storage management.
+      Intermediate code. Code generation. Macros.
+    name: Compiler Construction
+    prerequisites: CS 350 or SE 350; Computer Science students only
+    review_link: https://uwflow.com/course/cs444
+    terms_offered: [0]
+  - antirequisites: ECE 456
+    code: '448'
+    department: CS
+    description: The objective of this course is to introduce students to fundamentals
+      of building a relational database management system. The course focuses on the
+      database engine core technology by studying topics such as storage management
+      (data layout, disk-based data structures), indexing, query processing algorithms,
+      query optimization, transactional concurrency control, logging and recovery.
+    name: Database Systems Implementation
+    prerequisites: CS 348 and (CS 350 or SE 350); Computer Science students only
+    review_link: https://uwflow.com/course/cs448
+    terms_offered: [0]
+  - antirequisites: SYDE 348
+    code: '449'
+    department: CS
+    description: An introduction to the fundamental theories, methods, and research
+      in the design and evaluation of novel computational artifacts designed to meet
+      real-world human needs.
+    name: Human-Computer Interaction
+    prerequisites: CS 240, 241; Level at least 3B; Computer Science students only.
+    review_link: https://uwflow.com/course/cs449
+    terms_offered: []
+  - antirequisites: ECE 429
+    code: '450'
+    department: CS
+    description: The course is intended to provide the student with an appreciation
+      of modern computer design and its relation to system architecture, compiler
+      technology and operating system functionality. The course places an emphasis
+      on design based on the measurement of performance and its dependency on parallelism,
+      efficiency, latency and resource utilization.
+    name: Computer Architecture
+    prerequisites: (CS 245 or SE 112/212) and (CS 350 or ECE 354 or MTE 241 or SE
+      350); Computer Science students only.
+    review_link: https://uwflow.com/course/cs450
+    terms_offered: [0]
+  - antirequisites: null
+    code: '452'
+    department: CS
+    description: Intended to give students experience with tools and techniques of
+      real-time programming, this course includes not only issues of microcomputer
+      architecture and a real-time programming language and operating system, but
+      also hands-on experience programming a microcomputer for applications such as
+      process control, data acquisition and communication.
+    name: Real-time Programming
+    prerequisites: CS 350 or SE 350; Computer Science students only
+    review_link: https://uwflow.com/course/cs452
+    terms_offered: [2, 1]
+  - antirequisites: CS 436, ECE 454
+    code: '454'
+    department: CS
+    description: An introduction to distributed systems, emphasizing the multiple
+      levels of software in such systems. Specific topics include fundamentals of
+      data communications, network architecture and protocols, local-area networks,
+      concurrency control in distributed systems, recovery in distributed systems,
+      and clock synchronization.
+    name: Distributed Systems
+    prerequisites: CS 350 or SE 350; Computer Science students only
+    review_link: https://uwflow.com/course/cs454
+    terms_offered: [2, 0, 1]
+  - antirequisites: CS 437/STAT 340
+    code: '457'
+    department: CS
+    description: 'Basic techniques of system performance evaluation. Specific topics
+      include: performance modeling, discrete event simulation, verification and validation
+      of simulation models, analysis of simulation output, analysis of single server
+      queue and queueing networks, modeling of computer systems, networks, and other
+      queueing or non-queueing systems.'
+    name: System Performance Evaluation
+    prerequisites: (CS 246 or 247) and (one of STAT 206, 231, 241); Computer Science
+      students only
+    review_link: https://uwflow.com/course/cs457
+    terms_offered: [0]
+  - antirequisites: ECE 458
+    code: '458'
+    department: CS
+    description: 'Security and privacy issues in various aspects of computing. Specific
+      topics include: comparing security and privacy, program security, writing secure
+      programs, controls against program threats, operating system security, formal
+      security models, network security, Internet application security and privacy,
+      privacy-enhancing technologies, database security and privacy, inference, data
+      mining, security policies, physical security, economics of security, and legal
+      and ethical issues.'
+    name: Computer Security and Privacy
+    prerequisites: CS 350 or SE 350. Computer Science students only.
+    review_link: https://uwflow.com/course/cs458
+    terms_offered: [2, 0]
+  - antirequisites: null
+    code: '473'
+    department: CS
+    description: An introduction to computational problems in medical imaging. Sources
+      of medical images (MRI, CT, ultrasound, PET) as well as reconstruction methods
+      for MRI and CT. Image manipulation and enhancement such as denoising and deblurring.
+      Patient motion correction and optimal image alignment. Tissue classification
+      and organ delineation using image topology.
+    name: Medical Image Processing
+    prerequisites: AMATH 242/341/CM 271/ CS 371 or CS 370; Not open to General Mathematics
+      students
+    review_link: https://uwflow.com/course/cs473
+    terms_offered: [0]
+  - antirequisites: null
+    code: '484'
+    department: CS
+    description: Introduction to image and vision understanding by computer. Camera-system
+      geometry, image formation and lighting, and image acquisition. Basic visual
+      processes for recognition of edges, regions, lines, and surfaces. Processing
+      of stereo images, and motion in image sequences. Object recognition. Applications
+      of computer-vision systems.
+    name: Computational Vision
+    prerequisites: (AMATH 242/341/CM 271/CS 371 or CS 370) and STAT 230 or 240; Computer
+      Science students only
+    review_link: https://uwflow.com/course/cs484
+    terms_offered: []
+  - antirequisites: null
+    code: '485'
+    department: CS
+    description: 'Extracting meaningful patterns from random samples of large data
+      sets. Statistical analysis of the resulting problems. Common algorithmic paradigms
+      for such tasks. Central concepts: VC-dimension, margins of a classifier, sparsity
+      and description length. Performance guarantees: generalization bounds, data
+      dependent error bounds and computational complexity of learning algorithms.
+      Common paradigms: neural networks, kernel methods and support-vector machines.
+      Applications to data mining.'
+    name: 'Machine Learning: Statistical and Computational Foundations'
+    prerequisites: CS 341 and (STAT 206 or 230 or 240); Computer Science students
+      only
+    review_link: https://uwflow.com/course/cs485
+    terms_offered: []
+  - antirequisites: ECE 457
+    code: '486'
+    department: CS
+    description: Goals and methods of artificial intelligence. Methods of general
+      problem solving. Knowledge representation and reasoning. Planning. Reasoning
+      about uncertainty. Machine learning. Multi-agent systems. Natural language processing.
+    name: Introduction to Artificial Intelligence
+    prerequisites: CM 339/CS 341 or SE 240; Computer Science students only.
+    review_link: https://uwflow.com/course/cs486
+    terms_offered: [2, 0, 1]
+  - antirequisites: null
+    code: '488'
+    department: CS
+    description: Software and hardware for interactive computer graphics. Implementation
+      of device drivers, 3-D transformations, clipping, perspective, and input routines.
+      Data structures, hidden surface removal, colour shading techniques, and some
+      additional topics will be covered.
+    name: Introduction to Computer Graphics
+    prerequisites: (CM 339/CS 341 or SE 240) and (CS 350 or SE 350) and (CS 370 or
+      371); Computer Science students only
+    review_link: https://uwflow.com/course/cs488
+    terms_offered: [2, 0, 1]
+  numberRequired: 1
+- category: ATE - ECE
+  electives:
+  - antirequisites: CO 485, 487, CS 458
+    code: '409'
+    department: ECE
+    description: Introduction to cryptology and computer security, theory of secure
+      communications, points of attack, conventional cryptographic systems, public
+      key cryptographic systems, standards, firewalls, wireless system security, applications.
+    name: Cryptography and System Security
+    prerequisites: ECE 358; Level at least 4A Computer Engineering or Electrical Engineering
+      or Software Engineering.
+    review_link: https://uwflow.com/course/ece409
+    terms_offered: [0, -1]
+  - antirequisites: CS 456
+    code: '416'
+    department: ECE
+    description: 'This course introduces higher level network protocols to build advanced
+      services and applications. The focus is on the concepts, the protocols, and
+      the fundamental design principles that have contributed to the successful development
+      of an array of novel applications, including web-based, real-time, multimedia,
+      and wireless. Topics include: advanced features of the networking layer (efficient
+      address look-up algorithms, Internet Control Message Protocol, Internet Group
+      Management Protocol), network management protocols (SNMP), routing and transport
+      support for next generation networks (MPLS, Mobile IP, IPv6, and STCP, mobility
+      support in the transport layer), electronic mail protocols (SMTP, POP, IMAP),
+      protocols for multimedia applications (SIP, RTP, RTCP), web services (HTTP),
+      and protocols for emerging applications (ad hoc, sensor, peer-to-peer, and vehicular).'
+    name: Higher Level Network Protocols
+    prerequisites: ECE 358, 418; Level at least 4A Computer Engineering or Electrical
+      Engineering or Software Engineering.
+    review_link: https://uwflow.com/course/ece416
+    terms_offered: []
+  - antirequisites: CS 473, SYDE 475/575
+    code: '417'
+    department: ECE
+    description: 'This course introduces the basic theories and methodologies of digital
+      image processing. Topics include intensity transformations for image enhancement,
+      two-dimensional discrete Fourier transform, spatial and frequency domain linear
+      image filtering, nonlinear image filtering, binary image processing, edge detection,
+      image segmentation, and digital video processing basics. [Offered: W]'
+    name: Image Processing
+    prerequisites: (Level at least 4A Computer Engineering or Electrical Engineering)
+      or (ECE 207; Level at least 4A Software Engineering).
+    review_link: https://uwflow.com/course/ece417
+    terms_offered: [0]
+  - antirequisites: null
+    code: '418'
+    department: ECE
+    description: 'Introduction to communications networks. Network architecture. Probabilistic
+      description of network Queuing analysis. Packet transmission and error control.
+      Dynamic routing. Media access control. Connection admission and congestion control.
+      Design tradeoffs and performance evaluation. Application examples. [Offered:
+      S]'
+    name: Communications Networks
+    prerequisites: ECE 358; Level at least 4A Computer Engineering or Electrical Engineering
+      or Software Engineering
+    review_link: https://uwflow.com/course/ece418
+    terms_offered: [1]
+  - antirequisites: CO 485, 487, CS 458
+    code: '419'
+    department: ECE
+    description: 'Security architecture and infrastructure, basic principles of trust
+      and trust models. Network domain security, protected tunnels, and network security
+      protocols. Access authentication, remote access, authentication models and mechanisms,
+      authentication servers and protocols. Broadcasting and multicast security, key
+      tree based multicast key distribution, and key revocation methods. Trusted platform,
+      hardware based trust model, secure boot, and operating system security management.
+      Radio link protection, and seamless security for mobility. [Offered: S]'
+    name: Communication System Security
+    prerequisites: (Level at least 4A Computer Engineering or Electrical Engineering)
+      or (ECE 207; Level at least 4A Software Engineering)
+    review_link: https://uwflow.com/course/ece419
+    terms_offered: [1]
+  - antirequisites: SYDE 524
+    code: '423'
+    department: ECE
+    description: Specification and design of embedded systems, specification languages,
+      hardware/software co-design, performance estimation, co-simulation, verification,
+      validation, embedded architectures, processor architectures and software synthesis,
+      system-on-a-chip paradigm, retargetable code generation and optimization, verification
+      and validation, environmental issues and considerations.
+    name: Embedded Computer Systems
+    prerequisites: (ECE 254 or 354 or SE 350), (ECE 224 or 324 or 325/MTE 325), ECE
+      327; Level at least 4A Computer Engineering or Electrical Engineering or Software
+      Engineering.
+    review_link: https://uwflow.com/course/ece423
+    terms_offered: []
+  - antirequisites: CS 450
+    code: '429'
+    department: ECE
+    description: 'Organization and performance of conventional uniprocessors, pipelined
+      processors, parallel processors and multiprocessors; memory and cache structures;
+      multiprocessor algorithms and synchronization techniques; special-purpose architectures.
+      [Offered: S]'
+    name: Computer Architecture
+    prerequisites: One of CS 354, ECE 254, 354, 450, SE 350; Level at least 4A Computer
+      Engineering or Electrical Engineering or Software Engineering or Computer Science/Digital
+      Hardware Option.
+    review_link: https://uwflow.com/course/ece429
+    terms_offered: [1]
+  - antirequisites: CS 454, 654
+    code: '454'
+    department: ECE
+    description: 'Principles of distributed computing; architectures and middleware;
+      servers, processes, and virtualization; upper-layer network protocols, interprocess
+      communication and remote procedure calling; concurrency, synchronization and
+      distributed algorithms, dependable distributed systems and fault tolerance.
+      [Offered: S]'
+    name: Distributed Computing
+    prerequisites: ECE 358 and (one of ECE 254, 354, SE 350); Level at least 4A Computer
+      Engineering or Electrical Engineering or Software Engineering.
+    review_link: https://uwflow.com/course/ece454
+    terms_offered: [1]
+  - antirequisites: null
+    code: '455'
+    department: ECE
+    description: 'Concepts, theory, tools, and practice to understand, design, and
+      write embedded software. This course covers computing elements, structures in
+      embedded software, resource access protocols, uniprocessor scheduling, programming-language
+      support, languages for MDD, worst-case execution time analysis, and overview
+      of embedded distributed systems. [Offered: S]'
+    name: Embedded Software
+    prerequisites: ECE 254 or 354 or SE 350; Level at least 4A Electrical Engineering
+      or Computer Engineering or Software Engineering
+    review_link: https://uwflow.com/course/ece455
+    terms_offered: [1]
+  - antirequisites: CS 486, SYDE 422/522
+    code: 457A
+    department: ECE
+    description: 'The course starts by addressing the ill-structured problems and
+      need for computational intelligence methods. It introduces the concepts of heuristics
+      and their use in conjunction with search methods, solving problems using heuristics
+      and metaheuristics, constraints satisfaction. The course also introduces the
+      concepts of cooperation and adaptations and how they are influencing new methods
+      for solving complex problems. The course starts by illustrating how the concepts
+      of cooperation and adaptation are manifested in nature and how such models are
+      inspiring new types of solutions methods. Topics to be covered include: search
+      algorithms, game playing, constraints satisfaction, meta-heuristics, evolutionary
+      computing methods, swarm intelligence, ant-colony algorithms, particle swarm
+      methods, adaptive and learning algorithms and the use of these algorithms in
+      solving continuous and discrete problems that arise in engineering applications.
+      [Offered: S]'
+    name: Cooperative and Adaptive Algorithms
+    prerequisites: Level at least 4A Computer Engineering or Electrical Engineering
+      or Software Engineering.
+    review_link: https://uwflow.com/course/ece457A
+    terms_offered: [1]
+  - antirequisites: SYDE 558
+    code: 457B
+    department: ECE
+    description: 'Introduces novel approaches for computational intelligence based
+      techniques including: knowledge based reasoning, expert systems, fuzzy inferencing
+      and connectionist modeling based on artificial neural networks. The focus is
+      on the use of soft computing approaches to deal effectively with real world
+      complex systems for which their mathematical or physical models are either non-tractable
+      or are difficult to obtain. The main thrust is on designing computationally
+      intelligent systems with human like capabilities in terms of reasoning, learning
+      and adaptation. Tools of computational intelligence could be used in a wide
+      range of engineering applications involving real world problems such as in:
+      planning problems, intelligent control, autonomous robotics, speech understanding,
+      pattern analysis, network design, face recognition, communication systems to
+      name a few. [Offered: W]'
+    name: Fundamentals of Computational Intelligence
+    prerequisites: Level at least 4A Computer Engineering or Electrical Engineering
+      or Mechatronics Engineering or Software Engineering or Systems Design Engineering.
+    review_link: https://uwflow.com/course/ece457B
+    terms_offered: [0]
+  - antirequisites: CS 458
+    code: '458'
+    department: ECE
+    description: 'Introduction to computer security. Models of security. Elementary
+      cryptography. Software security, vulnerabilities, threats, defenses and secure-software
+      development processes. Threats to networks and defenses. Security issues at
+      the application layer. Secure design principles, techniques and security evaluation.
+      Privacy, ethics and legal issues. [Offered: S]'
+    name: Computer Security
+    prerequisites: ECE 254 or 354 or SE 350; Level at least 4A Computer Engineering
+      or Electrical Engineering or Software Engineering.
+    review_link: https://uwflow.com/course/ece458
+    terms_offered: [1]
+  - antirequisites: CS 457
+    code: '459'
+    department: ECE
+    description: 'Profiling computer systems; bottlenecks, Amdahl''s law. Concurrency:
+      threads and locks. Techniques for programming multicore processors; cache consistency.
+      Transactional memory. Streaming architectures, vectorization, and SIMD. High-performance
+      programming languages. [Offered: W]'
+    name: Programming for Performance
+    prerequisites: ECE 254 or 354 or SE 350; Level at least 4A Electrical Engineering
+      or Computer Engineering or Software Engineering
+    review_link: https://uwflow.com/course/ece459
+    terms_offered: [0]
+  - antirequisites: ECE 484
+    code: '481'
+    department: ECE
+    description: 'Performance specifications for design. Dynamic system modelling
+      and basic system identification. Dealing with basic nonlinear effects. Sampled
+      data systems. Discrete-time system stability and dynamic performance. Digital
+      control system design: emulation methods, z-domain, frequency domain, pole placement.
+      Implementation of digital controllers. [Offered: S]'
+    name: Digital Control Systems
+    prerequisites: (ECE 380 or MTE 360 or SYDE 352; Level at least 4A Computer Engineering
+      or Electrical Engineering or Systems Design Engineering) or (ECE 207, SE 380;
+      Level at least 4A Software Engineering).
+    review_link: https://uwflow.com/course/ece481
+    terms_offered: [1]
+  - antirequisites: Antireq:ME 547
+    code: '486'
+    department: ECE
+    description: 'Homogeneous transformations. Kinematics and inverse kinematics.
+      Denavit-Hartenberg convention. Jacobians and velocity transformations. Dynamics.
+      Path planning, nonlinear control. Compliance and force control. [Offered: S]'
+    name: Robot Dynamics and Control
+    prerequisites: Prereq:(ECE 380;Level at least 4A Comp or Elect Eng)or(SE 380;Level
+      at least 4A Software Eng)or(MTE 360;Level at least 4A Mechatronics Eng)or(ME
+      360;Level at least 4A Mech Eng/Mechtr Opt)or(SYDE 352;Level at least 4A Sys
+      Design Eng)
+    review_link: https://uwflow.com/course/ece486
+    terms_offered: [1]
+  - antirequisites: null
+    code: '488'
+    department: ECE
+    description: 'Review of feedback control design fundamentals; SISO controller
+      parameterizations; the fundamental effect of MIMO interaction; introduction
+      to state-space models in continuous and discrete time; SISO techniques for MIMO
+      design; optimal control; model-predictive control design; state estimation;
+      decoupling, MIMO PID control design; applications in areas such as aerospace
+      systems. [Offered: W]'
+    name: Multivariable Control Systems
+    prerequisites: Prereq:(ECE 380;Level at least 4A Comp or Elect Eng)or(SE 380;Level
+      at least 4A Software Eng)or(MTE 360;Level at least 4A Mechatronics Eng)or(ME
+      360;Level at least 4A Mech Eng/Mechtr Opt)or(SYDE 352;Level at least 4A Sys
+      Design Eng)
+    review_link: https://uwflow.com/course/ece488
+    terms_offered: [0]
+  numberRequired: 1
+- category: ATE - CS/ECE
+  electives:
+  - antirequisites: null
+    code: '487'
+    department: CO
+    description: 'A broad introduction to cryptography, highlighting the major developments
+      of the past twenty years. Symmetric ciphers, hash functions and data integrity,
+      public-key encryption and digital signatures, key establishment, key management.
+      Applications to Internet security, computer security, communications security,
+      and electronic commerce. [Offered: W]'
+    name: Applied Cryptography
+    prerequisites: MATH 135 or 145, STAT 220 or 230 or 240; Level at least 3A; Not
+      open to General Mathematics students
+    review_link: https://uwflow.com/course/co487
+    terms_offered: [0]
+  - antirequisites: null
+    code: '462'
+    department: CS
+    description: Languages and their representations. Grammars --Chomsky hierarchy.
+      Regular sets and sequential machines. Context-free grammars -- normal forms,
+      basic properties. Pushdown automata and transducers. Operations on languages.
+      Undecidable problems in language theory. Applications to the design of programming
+      languages and compiler construction.
+    name: Formal Languages and Parsing
+    prerequisites: CS 360 or 365; Computer Science students only
+    review_link: https://uwflow.com/course/cs462
+    terms_offered: [0]
+  - antirequisites: null
+    code: '466'
+    department: CS
+    description: 'Algorithmic approaches and methods of assessment that reflect a
+      broad spectrum of criteria, including randomized algorithms, amortized analysis,
+      lower bounds, approximation algorithms, and on-line algorithms. Particular examples
+      will be chosen from different areas of active research and application. [Offered:
+      F,S]'
+    name: Algorithm Design and Analysis
+    prerequisites: CM 339/CS 341; Computer Science students only
+    review_link: https://uwflow.com/course/cs466
+    terms_offered: [2, 1]
+  - antirequisites: null
+    code: '467'
+    department: CS
+    description: 'Basics of computational complexity; basics of quantum information;
+      quantum phenomena; quantum circuits and universality; relationship between quantum
+      and classical complexity classes; simple quantum algorithms; quantum Fourier
+      transform; Shor factoring algorithm; Grover search algorithm; physical realization
+      of quantum computation; error-correction and fault-tolerance; quantum key distribution.
+      [Offered: W]'
+    name: Introduction to Quantum Information Processing
+    prerequisites: One of MATH 114, 115, 235, 245; Level at least 4A; Not open to
+      General Mathematics students
+    review_link: https://uwflow.com/course/cs467
+    terms_offered: [0]
+  - antirequisites: CM/CS 372, 472
+    code: '475'
+    department: CS
+    description: "Basic concepts and implementation of numerical linear algebra techniques\
+      \ and their use in solving application problems. Special methods for solving\
+      \ linear systems having special features. Direct methods: symmetric, positive\
+      \ definite, band, general sparse structures, ordering methods.\r\nIterative\
+      \ methods: Jacobi, Gauss-Seidel, SOR, conjugate gradient. Computing and using\
+      \ orthogonal factorizations of matrices. QR and SVD methods for solving least\
+      \ squares problems. Eigenvalue and singular value decompositions. Computation\
+      \ and uses of these decompositions in practice."
+    name: Computational Linear Algebra
+    prerequisites: AMATH 242/341/CM 271/CS 371 or CS 370; Not open to General Mathematics
+      students.
+    review_link: https://uwflow.com/course/cs475
+    terms_offered: [2]
+  - antirequisites: null
+    code: '487'
+    department: CS
+    description: An introduction to the use of computers for symbolic mathematical
+      computation, involving traditional mathematical computations such as solving
+      linear equations (exactly), analytic differentiation and integration of functions,
+      and analytic solution of differential equations.
+    name: Introduction to Symbolic Computation
+    prerequisites: CS 234 or 240 or SE 240; Honours Mathematics or Software Engineering
+      students only
+    review_link: https://uwflow.com/course/cs487
+    terms_offered: [0]
+  - antirequisites: null
+    code: '489'
+    department: CS
+    description: See the Course Offerings List for topics available.
+    name: Advanced Topics in Computer Science
+    prerequisites: Level at least 3B; Computer Science students only
+    review_link: https://uwflow.com/course/cs489
+    terms_offered: []
+  - antirequisites: AFM 241, CS 330, MSCI 441
+    code: '490'
+    department: CS
+    description: 'The integration of business and technical considerations in the
+      design, implementation and management of information systems. Topics include:
+      IS planning and development; business, management, executive, and strategic
+      information systems, including case studies of selected large- scale systems;
+      decision support systems; end-user training and development; systems security,
+      disaster planning and recovery. Practical examples of information systems in
+      industry. [Offered: W]'
+    name: Information Systems Management
+    prerequisites: CS 350 or SE 350; Computer Science students only
+    review_link: https://uwflow.com/course/cs490
+    terms_offered: [0]
+  - {code: '406', department: 'ECE ', name: Algorithm Design and Analysis}
+  - {code: '498', department: SE, name: Advanced Topics in Software Engineering}
+  - {code: '499', department: SE, name: Project}
+  - {code: '433', department: SYDE, name: Conflict Resolution}
+  - {code: '475', department: SYDE, name: Image Processing}
+  - {code: '558', department: SYDE, name: Fuzzy Logic and Neural Networks}
+  numberRequired: 1
+- category: ATE - General
+  electives:
+  - antirequisites: CS 365
+    code: '360'
+    department: CS
+    description: Models of computers including finite automata and Turing machines.
+      Basics of formal languages with applications to the syntax of programming languages.
+      Alternate characterizations of language classes. Proving unrecognizability.
+      Unsolvable problems and their relevance to the semantics of programming.
+    name: Introduction to the Theory of Computing
+    prerequisites: CS 240, 241 and (MATH 239 or 249); Computer Science students only.
+    review_link: https://uwflow.com/course/cs360
+    terms_offered: [2, 0, 1]
+  - antirequisites: CS 360
+    code: '365'
+    department: CS
+    description: Finite automata and regular expressions. Pushdown automata and context-free
+      grammars. Turing machines and undecidability. Time and space complexity. Diagonalization
+      and hierarchies. CS 365 covers the material in CS 360 at an accelerated pace
+      plus additional topics in computational complexity.
+    name: Models of Computation
+    prerequisites: CS 240, 241 and (MATH 239 or 249); Computer Science students only.
+    review_link: https://uwflow.com/course/cs365
+    terms_offered: [0]
+  - antirequisites: AMATH 242/341/CM 271/CS 371, CS 335, 337, ECE 204, 304
+    code: '370'
+    department: CS
+    description: Principles and practices of basic numerical computation as a key
+      aspect of scientific computation. Visualization of results. Approximation by
+      splines, fast Fourier transforms, solution of linear and nonlinear equations,
+      differential equations, floating point number systems, error, stability. Presented
+      in the context of specific applications to image processing, analysis of data,
+      scientific modeling.
+    name: Numerical Computation
+    prerequisites: (One of MATH 118, 119, 128, 138, 148), (One of MATH 114, 115, 106/125,
+      136, 146), (One of CS 234, 241, 246); Not open to General Mathematics students.
+    review_link: https://uwflow.com/course/cs370
+    terms_offered: [2, 0, 1]
+  - antirequisites: CS 335, 337, 370, ECE 204
+    code: '371'
+    department: CS
+    description: 'A rigorous introduction to the field of computational mathematics.
+      The focus is on the interplay between continuous models and their solution via
+      discrete processes. Topics include: pitfalls in computation, solution of linear
+      systems, interpolation, discrete Fourier transforms and numerical integration.
+      Applications are used as motivation.'
+    name: Introduction to Computational Mathematics
+    prerequisites: (One of CS 116, 134, 136, 138, 145 taken fall 2010 or earlier,
+      CS 146), MATH 235 or 245, 237 or 247; Not open to General Mathematics students.
+    review_link: https://uwflow.com/course/cs371
+    terms_offered: [0, 1]
+  - antirequisites: ECE 342
+    code: '207'
+    department: ECE
+    description: 'Discrete, continuous and periodic signals, time- and frequency-domain
+      analysis of continuous- and discrete-time linear systems, periodic signals and
+      Fourier series, non-periodic signals and Fourier transforms. [Offered: F, S]'
+    name: Signals and Systems
+    prerequisites: (ECE 140, 240; Level at least 2B Computer Engineering or Electrical
+      Engineering) or (ECE 140, MATH 213; Level at least 3A Software Engineering).
+    review_link: https://uwflow.com/course/ece207
+    terms_offered: [2, 1]
+  - antirequisites: ECE 324, 325/MTE 325
+    code: '224'
+    department: ECE
+    description: Microprocessor system architecture, bus systems, memory systems,
+      peripherals, parallel interfaces, serial interfaces, analog interfaces, data
+      transfer, synchronization, error detection/correction, testing and debugging.
+      [Offered F, W, first offered Fall 2011, not offered Winter 2012]
+    name: Embedded Microprocessor Systems
+    prerequisites: (ECE 124, 155, 222; Level at least 2B Computer Engineering or 3B
+      Electrical Engineering) or (ECE 124, 222; Level at least 3A Software Engineering).
+    review_link: https://uwflow.com/course/ece224
+    terms_offered: []
+  - antirequisites: null
+    code: '327'
+    department: ECE
+    description: 'Design and modelling of digital hardware systems using a hardware
+      description language. Development process. Impact of implementation technologies.
+      Performance analysis and optimization. Functional verification. Timing analysis.
+      Power analysis and optimization. Faults and testability. Reliability and fault
+      tolerance.[Offered: W, S]'
+    name: Digital Hardware Systems
+    prerequisites: (ECE 222 or MTE 241); (ECE 224 or 324 or 325/MTE 325); (ECE 124
+      or 223 or MTE 262 or SE 141); Level at least 3A Computer Engineering or Electrical
+      Engineering or Mechatronics Engineering or Software Engineering or Computer
+      Science/Digital Hdw Op
+    review_link: https://uwflow.com/course/ece327
+    terms_offered: [0, 1]
+  - antirequisites: CS 449, MSCI 343.
+    code: '348'
+    department: SYDE
+    description: 'This course approaches the design tasks, tools, products and systems
+      from a user-centered design perspective. Emphasis is on the human factors and
+      usability methods and techniques that can and should be applied throughout the
+      iterative design process. While design issues pertaining to human-computer interaction
+      are discussed, the methods presented can be applied to the design of almost
+      any user interface. Major topics include: function and task analysis, usability
+      analysis, prototyping and evaluation, user interaction styles, interface design,
+      user designing to guidelines and standards. [Offered: W]'
+    name: User Centred Design Methods
+    prerequisites: (Level at least 3B Systems Design Engineering) or (Level at least
+      4A Mechatronics Engineering or Biomechanics Option or Ergonomics Option).
+    review_link: https://uwflow.com/course/syde348
+    terms_offered: [0]
+  numberRequired: 1
+- category: Science
+  electives:
+  - antirequisites: PHYS 381
+    code: '130'
+    department: BIOL
+    description: An introduction to the concepts of cell biology with emphasis on
+      (1) the structural organization of the cell and (2) the function of critical
+      molecular processes that are characteristic of living organisms.
+    name: Introductory Cell Biology
+    prerequisites: null
+    review_link: https://uwflow.com/course/biol130
+    terms_offered: [2, 1, 0]
+  - antirequisites: null
+    code: '239'
+    department: BIOL
+    description: 'Mendelian genetics. Chromosomal mechanisms in mitosis and meiosis.
+      The origin, inheritance and adaptive significance of chromosomal changes. Nucleic
+      acids as the carriers of genetic information. Natural selection and the evolution
+      of genetic systems. [Formerly BIOL 139. Offered: W,S]'
+    name: Genetics
+    prerequisites: null
+    review_link: https://uwflow.com/course/biol239
+    terms_offered: [0, 1]
+  - antirequisites: null
+    code: '240'
+    department: BIOL
+    description: Introduction to the biology of bacterial and archaeal organisms.
+      Topics include cell structure and function, methods of cultivation, genetics,
+      phylogeny and taxonomy, and metabolic and genetic diversity.
+    name: Fundamentals of Microbiology
+    prerequisites: null
+    review_link: https://uwflow.com/course/biol240
+    terms_offered: [1, 2, 0]
+  - antirequisites: BIOL 301A, 301B, SCI 351, 352
+    code: '273'
+    department: BIOL
+    description: The physiology of major organ systems of the human body. Topics include
+      neurophysiology and peripheral nervous system, muscle, the cardiovascular system,
+      the components of blood, respiratory system and immune system. The combination
+      of BIOL 273 and BIOL 373 covers all of the major topics of human physiology.
+    name: Principles of Human Physiology 1
+    prerequisites: BIOL 130;
+    review_link: https://uwflow.com/course/biol273
+    terms_offered: [0, 1]
+  - antirequisites: null
+    code: '161'
+    department: CHE
+    description: 'Introduction to basic concepts of biochemistry and cell biology.
+      Overview of the chemistry of amino acids, carbohydrates, lipids and nucleic
+      acids. Properties and functions of biopolymers. Elements of cell structure and
+      diversity, and relationship of biochemistry with cell metabolism. A focus on
+      biotechnologically relevant examples such as biomimetic engineering design,
+      proteomics, system biology and high throughput biology. [Offered: W, S]'
+    name: Engineering Biology
+    prerequisites: Level at least 1B Engineering or Software Engineering
+    review_link: https://uwflow.com/course/che161
+    terms_offered: [0, 1]
+  - antirequisites: CHEM 264, 266, NE 122
+    code: '262'
+    department: CHEM
+    description: 'Bonding, structure and nomenclature in organic chemistry. Physical
+      properties and simple reactions associated with the important functional groups.
+      [Offered: F,W; previously numbered CHEM 28]'
+    name: Organic Chemistry for Engineering and Bioinformatics Students
+    prerequisites: Chemical Engineering or Bioinfomatics students.
+    review_link: https://uwflow.com/course/chem262
+    terms_offered: [2, -1]
+  - antirequisites: CIVE 153, EARTH 153, ENVE 153, GEOE 153
+    code: '121'
+    department: EARTH
+    description: This course explores the geological processes of the Earth's interior
+      and surface. These include volcanism, earthquakes, mountain building, glaciation
+      and weathering. Students will gain an appreciation of how these processes have
+      controlled the evolution of our planet and the role of geology in meeting society's
+      current and future demand for sustainable energy and mineral resources.
+    name: Introductory Earth Sciences
+    prerequisites: null
+    review_link: https://uwflow.com/course/earth121
+    terms_offered: [2]
+  - antirequisites: CHEM 256/356, NE 232
+    code: '234'
+    department: PHYS
+    description: 'Background of quantum physics. Quantization, waves and particles.
+      The uncertainty principle. The Schroedinger equation for one-dimensional problems:
+      bound states in square wells. Harmonic oscillator; transmission through barriers.'
+    name: Quantum Physics 1
+    prerequisites: PHYS 112 or 122; MATH 114 or 136; MATH 128 or 138 or 148; One of
+      MATH 228, AMATH 250, AMATH 251.
+    review_link: https://uwflow.com/course/phys234
+    terms_offered: [0, 1]
+  - antirequisites: PHYS 256/ECE 404
+    code: '246'
+    department: PHYS
+    description: 'Nature of light, wave motion, superposition of waves, interference
+      of light, Fraunhofer diffraction and resolution limit of optical instruments;
+      the diffraction grating and the analysis of light. Fresnel diffraction. Polarized
+      light. Coherence of light, lasers, holography. Fibre Optics. [Offered: W]'
+    name: Physical Optics
+    prerequisites: One of PHYS 111, 121 and One of PHYS 112, 122; One of MATH 107,
+      127, 137, 147 and One of MATH 108, 128, 138, 148. Not open to students in Honours
+      Physics or Honours Chemical Physics.
+    review_link: https://uwflow.com/course/phys246
+    terms_offered: [0]
+  - antirequisites: null
+    code: '275'
+    department: PHYS
+    description: 'Terrestrial and gas giant planets in the Solar System, asteroids
+      and comets. Extrasolar planets and astrobiology. Star and planet formation.
+      [Offered: F]'
+    name: Planets
+    prerequisites: PHYS 111 or 115 or 121
+    review_link: https://uwflow.com/course/phys275
+    terms_offered: [2]
+  - antirequisites: AMATH 373
+    code: '334'
+    department: PHYS
+    description: 'Formalism of quantum mechanics. Operator approach to the harmonic
+      oscillator. Quantum mechanics in three dimensions: Hydrogen atom, angular momentum
+      and spin. Time-independent perturbation theory. Fine structure of hydrogen.
+      Zeeman effect. Identical particles. The variational principle. Ground state
+      of the helium atom. Applications in atomic and molecular physics. [Offered:
+      F,S]'
+    name: Quantum Physics 2
+    prerequisites: PHYS 234 or CHEM 256/356; MATH 228, AMATH 250, 251; MATH 227 or
+      237 or 247.
+    review_link: https://uwflow.com/course/phys334
+    terms_offered: [2, 1]
+  - antirequisites: null
+    code: '375'
+    department: PHYS
+    description: 'Stellar distances, masses, ages. Stellar interiors and atmospheres,
+      star formation and evolution. Supernovae, white dwarfs, neutron stars, black
+      holes. [Offered: W]'
+    name: Stars
+    prerequisites: PHYS 112 or 122 and two of PHYS 234, 241, 242, 256, 258/358, 263,
+      275
+    review_link: https://uwflow.com/course/phys375
+    terms_offered: [0]
+  - antirequisites: null
+    code: '209'
+    department: ECE
+    description: 'Review of wave-particle duality, basic quantum mechanics, Schrodinger
+      equation, energy bands in crystals, basic properties of semiconductors, intrinsic
+      and doped semiconductor, electrons and holes, metals and alloys, superconductivity,
+      phonons and heat capacity, dielectric materials, optical properties, dielectric
+      properties and magnetic properties of materials. [Offered: F, S]'
+    name: Electronic and Electrical Properties of Materials
+    prerequisites: (ECE 105, 106) or PHYS 125; Level at least 2B Computer Engineering
+      or Electrical Engineering or Software Engineering
+    review_link: https://uwflow.com/course/ece209
+    terms_offered: [2, 1]
+  notes: Some courses have a lab component. You should double check with your academic
+    advisor to see if you need to take the lab component.
+  numberRequired: 2
+- category: Communication
+  electives:
+  - antirequisites: null
+    code: '109'
+    department: ENGL
+    description: The course will explore a variety of issues in academic writing such
+      as style, argument, and the presentation of information. Frequent written exercises
+      will be required.
+    name: Introduction to Academic Writing
+    prerequisites: null
+    review_link: https://uwflow.com/course/engl109
+    terms_offered: []
+  - antirequisites: null
+    code: '119'
+    department: ENGL
+    description: This course aims to build students' oral and written communication
+      skills to prepare them for academic and workplace demands. Working independently
+      and in collaboration with others, students will analyze and produce various
+      written and spoken forms of communication. Projects and assignments will draw
+      on materials for Mathematics and Computer Science students.
+    name: Communications in Mathematics & Computer Science
+    prerequisites: English Proficiency Milestone; Honours Mathematics students only
+    review_link: https://uwflow.com/course/engl119
+    terms_offered: []
+  - antirequisites: null
+    code: 140R
+    department: ENGL
+    description: The use and abuse of spoken and written English. The study and evaluation
+      of language as it is used for various purposes (e.g., colloquial, scientific,
+      legal, political, commercial, journalistic, literary) in order to increase critical
+      awareness and to help students to write clearly and effectively.
+    name: The Use of English 1
+    prerequisites: null
+    review_link: https://uwflow.com/course/engl140R
+    terms_offered: []
+  - antirequisites: null
+    code: 210F
+    department: ENGL
+    description: 'This courses explores the genres of communication in business and
+      other organizations. Students will study and produce instances from several
+      of the following: reports (of several kinds), letters, email messages, marketing
+      materials, public relations materials, and any other types of organizational
+      communication.'
+    name: Genres of Business Communication
+    prerequisites: Level at least 2A
+    review_link: https://uwflow.com/course/engl210F
+    terms_offered: []
+  - {code: 210G, department: ENGL, name: Technical Writing - Online Mode}
+  - {code: '100', department: SPCOM, name: Interpersonal Communication}
+  - {code: '223', department: SPCOM, name: Public Speaking}
+  - {code: '324', department: SPCOM, name: Small Group Communication}
+  - {code: '432', department: SPCOM, name: Conflict Management}
+  numberRequired: 1
+- category: List A - Social Issues
+  electives:
+  - antirequisites: null
+    code: '102'
+    department: ANTH
+    description: The dynamic nature of cultural systems is examined. Topics include
+      language, technology, social organization, economics, politics, and religion.
+      Data are drawn from a broad global and historical ethnographic base.
+    name: Introduction to Social and Cultural Anthropology
+    prerequisites: null
+    review_link: https://uwflow.com/course/anth102
+    terms_offered: []
+  - antirequisites: null
+    code: '390'
+    department: ECE
+    description: 'Introduction to design-project management, the impact of technology
+      on society and the environment, and engineering economics. [Offered: F, W, first
+      offered Fall 2012]'
+    name: Engineering Design, Economics, and Impact on Society
+    prerequisites: ECE 290; Level at least 3B Computer Engineering or Electrical Engineering
+    review_link: https://uwflow.com/course/ece390
+    terms_offered: [2, 0, -1]
+  - antirequisites: null
+    code: '215'
+    department: ERS
+    description: An introduction to processes and techniques for incorporating environmental
+      considerations in planning and evaluating proposals for future undertakings
+      that may have significant social and biophysical effects. The course provides
+      an overview of methodologies for, and controversies surrounding, the design
+      and conduct of biophysical and socioeconomic impact studies, and the testing
+      of reported findings. The main focus is on the purposes and design of environmental
+      assessment processes, with particular reference to the Canadian federal and
+      Ontario provincial legal mandates, and the evolution of assessment into a sustainability
+      framework.
+    name: Environmental and Sustainability Assessment I
+    prerequisites: Level at least 1B
+    review_link: https://uwflow.com/course/ers215
+    terms_offered: []
+  - antirequisites: null
+    code: '315'
+    department: ERS
+    description: Continuing from concepts developed in ERS 215, this course places
+      more emphasis on case studies and projects by students. The course provides
+      a synthesis of ecological, physical, economic, socio-cultural and institutional
+      concerns, as well as experience in the use of impact assessment methodologies
+      and approaches, as a key element in achieving more informed and responsible
+      decision making.
+    name: Environmental and Sustainability Assessment II
+    prerequisites: ERS 215/241 and ENVS 200
+    review_link: https://uwflow.com/course/ers315
+    terms_offered: []
+  - antirequisites: null
+    code: 22A
+    department: GENE
+    description: Courses taken at foreign universities by University of Waterloo engineering
+      students while enrolled in an international exchange institution, and reserved
+      for courses without equivalents at the University of Waterloo. These courses
+      are treated as list A complementary studies electives in the student's program.
+      Such courses are reported on the student's transcript with their original titles
+      in English showing as the topic. The grades for these courses will be either
+      CR or NCR.
+    name: Topics for List A Complementary Studies Courses Taken on Exchange by Engineering
+      Students
+    prerequisites: null
+    review_link: https://uwflow.com/course/gene22A
+    terms_offered: []
+  - antirequisites: ERS 231, GEOG 202B
+    code: '203'
+    department: GEOG
+    description: Examines the interface between human development and the environment
+      in a global context. Various perspectives are explored to link environmental
+      issues to wealth, poverty, consumption, population, and economic globalization.
+      Case studies, with an emphasis on developing countries, are used to illustrate
+      linkages.
+    name: Environment and Development in a Global Perspective
+    prerequisites: ENVS 195 or GEOG 101 or Geomatics plans
+    review_link: https://uwflow.com/course/geog203
+    terms_offered: []
+  - antirequisites: null
+    code: '368'
+    department: GEOG
+    description: Consideration of the constraints and guidelines that an application
+      of the principles of ecology places on the planning and management of resources
+      within urban spaces and the implications for urban design. The theory and history
+      of this subject will be discussed together with urban ecomanagement, the management
+      of waste, urban open space and parks, rehabilitated sites, and environmentally
+      sensitive areas.
+    name: Conservation/Resource Management of the Built Environment
+    prerequisites: ENVS 200
+    review_link: https://uwflow.com/course/geog368
+    terms_offered: []
+  - antirequisites: null
+    code: '422'
+    department: MSCI
+    description: 'This course is designed to analyse the impact of technological change
+      and entrepreneurship at a firm and societal level, primarily in terms of the
+      economic antecedents and consequences of new technology. The scope of the course
+      ranges from the study of the determination of productivity and its effect on
+      economic growth to the determination of innovative activity and performance.
+      Prereq: (One of CIVE 292, ECON 101, ENVE 292, MSCI 261, SYDE 262) and (One of
+      CHE 220, CIVE 224, ECE 316, ECON 221, ENVE 224, ENVS 278, KIN 222, MSCI 252,
+      ME 202, MTE 201, NE 115, PSCI 314, PSYCH 292, REC 371, SDS 250R, SOC 280, STAT
+      202, 206, 211, 221, 231, 241, SYDE 212) and level at least 3A. [Offered: F]'
+    name: Economic Impact of Technological Change and Entrepreneurship
+    prerequisites: See course description for prerequisite details
+    review_link: https://uwflow.com/course/msci422
+    terms_offered: [2]
+  - antirequisites: null
+    code: '442'
+    department: MSCI
+    description: 'This course is designed to familiarize the student with issues related
+      to the impact of computer-based technologies on individual jobs, organizations,
+      and broader societal level. Particular emphasis will be placed on critical examination
+      of various issues including privacy, security, ethical concern and professional
+      responsibilities. [Offered: W]'
+    name: Impact of Information Systems on Organizations and Society
+    prerequisites: Level at least 3A Engineering
+    review_link: https://uwflow.com/course/msci442
+    terms_offered: [0]
+  - antirequisites: null
+    code: '226'
+    department: PHIL
+    description: An examination of ethical issues in the health sciences, such as
+      the patient-doctor relationship, reproductive rights and technologies, genetic
+      testing, allocation of medical resources, and end of life decisions.
+    name: Biomedical Ethics
+    prerequisites: null
+    review_link: https://uwflow.com/course/phil226
+    terms_offered: []
+  - antirequisites: null
+    code: '232'
+    department: SOC
+    description: The course examines how forms of society influence technological
+      developments and, reciprocally, how society is influenced by technology. It
+      covers such topics as the de-skilling of work, technocracy, communications technology,
+      and cyberspace, from an historical perspective, looking for the unifying features
+      of technologies ranging from Stone Age tools to the microprocessor.
+    name: Technology and Social Change
+    prerequisites: SOC 101/101R or 120R
+    review_link: https://uwflow.com/course/soc232
+    terms_offered: []
+  - antirequisites: null
+    code: '100'
+    department: STV
+    description: This course examines the interaction of the technologies developed
+      by a culture with the values and social organization of that culture. The course
+      exposes students to various definitions of society, technology and values, and
+      it presents alternative views about how the three interact. These views are
+      then applied to a number of spheres of influence, including patterns of employment
+      and the role of work; medicine and health; polity and economy; sustainable development
+      and the environment.
+    name: 'Society, Technology and Values: Introduction'
+    prerequisites: null
+    review_link: https://uwflow.com/course/stv100
+    terms_offered: []
+  - antirequisites: SYDE 261
+    code: '202'
+    department: STV
+    description: The course uses design as a vehicle for examining technology and
+      society interaction, particularly how we design, create, and choose technology.
+      Design and Society has been created to introduce students to various methods
+      to help them view design and technology from a technology-society perspective.
+      The overriding aims of the course are to (a) develop an ability to see through
+      the eyes of others and promote thinking about technology in terms of users as
+      well as producers or creators, (b) develop critical thinking skills, and (c)
+      present design and the choice of technology as an activity involving societal
+      and individual concerns rather than as a purely technical matter. The course
+      does not require advanced technical knowledge and is open to students of all
+      faculties.
+    name: Design and Society
+    prerequisites: null
+    review_link: https://uwflow.com/course/stv202
+    terms_offered: []
+  - antirequisites: null
+    code: '203'
+    department: STV
+    description: Biotechnologies are currently migrating from the laboratory to a
+      wide range of consumer products. In everything from foods to pharmaceuticals,
+      genetic engineering is entering daily life. The biotechnology revolution will
+      likely have as much of an impact on our lives as the information technology
+      revolution. However, there is a wide and potentially dangerous gap between research
+      and development on the one hand and societal awareness of its impact on the
+      other. This course is intended to help students gain a deeper appreciation for
+      the issues, including ethics, surrounding biotechnology and society. It will
+      do this through an investigation of such interactions between biotechnologies
+      and society as genetics and the law, foods and the media, and soil remediation
+      and the environment. Consideration will also be given to the role of computing
+      in biotech research and in the human genome project.
+    name: Biotechnology and Society
+    prerequisites: Level at least 2A
+    review_link: https://uwflow.com/course/stv203
+    terms_offered: []
+  - antirequisites: null
+    code: '205'
+    department: STV
+    description: Cybernetics is the study of the interfaces between humans and machines.
+      This course will present an overview of cybernetics from automation and robotics
+      to prosthetics and wearable computing. The roles of men and women in a post-human
+      era will be discussed along with related themes dealing with gender, cyberspace,
+      politics and popular culture.
+    name: Cybernetics and Society
+    prerequisites: null
+    review_link: https://uwflow.com/course/stv205
+    terms_offered: []
+  - antirequisites: null
+    code: '302'
+    department: STV
+    description: The course has been designed to provide a framework or set of intellectual
+      tools to help students understand and evaluate technological change. These tools
+      will be applied to the development of information technology, its interaction
+      with society, and possible future scenarios. Selected topics include understanding
+      digitization as culture, visions of the future and the perils of prediction,
+      as well as issues related to application areas such as the home, manufacturing,
+      office work, design and services, education, and law. The course will also consider
+      some of the privacy and personal dignity issues associated with information
+      technology.
+    name: Information Technology and Society
+    prerequisites: Level at least 3A or one of STV 100, 202, 203, or 205
+    review_link: https://uwflow.com/course/stv302
+    terms_offered: []
+  - antirequisites: null
+    code: '404'
+    department: STV
+    description: The course begins by questioning whether or not there is anything
+      distinctive about Canadian design and its context. Through the use of historical
+      and contemporary cases, this course examines factors influencing design and
+      technology choice in Canada and their outcomes. The future of design is also
+      considered in terms of current trends, issues, challenges and opportunities.
+    name: Technology in Canadian Society
+    prerequisites: One of STV 100, 202, 203, or 205
+    review_link: https://uwflow.com/course/stv404
+    terms_offered: []
+  - antirequisites: STV 202
+    code: '261'
+    department: SYDE
+    description: 'This non-technical course will help students understand how others
+      think about technology and then use this knowledge to make better choices when
+      designing, specifying, choosing and implementing technology. The course includes
+      topics such as: meanings of design and their implications; designed in/designed
+      out analysis; reductionism and integration in design; the limits of objective
+      thinking; alternate ways to define function; content and context; "we/me/them/it"
+      analysis; redefining what constitutes acceptable technology; learning from the
+      margins; reading design and understanding system boundaries as being defined
+      by what we do rather than what we say. [Offered: W]'
+    name: Design, Systems, and Society
+    prerequisites: 2A Systems Design Engineering.
+    review_link: https://uwflow.com/course/syde261
+    terms_offered: [0]
+  - antirequisites: null
+    code: '205'
+    department: WS
+    description: This course highlights the social relations that surround and define
+      a range of technologies from household appliances to the internet. Special emphasis
+      will be given to the different ways and contexts in which men and women understand
+      and experience technology as designers, engineers, producers and consumers.
+    name: Gender, Culture and Technology
+    prerequisites: null
+    review_link: https://uwflow.com/course/ws205
+    terms_offered: []
+  numberRequired: 1
+- category: List C - Humanities and Social Sciences
+  electives:
+  - antirequisites: null
+    code: '101'
+    department: ECON
+    description: This course provides an introduction to microeconomic analysis relevant
+      for understanding the Canadian economy. The behaviour of individual consumers
+      and producers, the determination of market prices for commodities and resources,
+      and the role of government policy in the functioning of the market system are
+      the main topics covered.
+    name: Introduction to Microeconomics
+    prerequisites: null
+    review_link: https://uwflow.com/course/econ101
+    terms_offered: []
+  - antirequisites: null
+    code: '202'
+    department: ECON
+    description: Theory of the determination of income/output (GDP), employment, unemployment,
+      prices (inflation), and interest rates; an analysis of monetary and fiscal policy.
+    name: Macroeconomic Theory 1
+    prerequisites: ECON 101, 102
+    review_link: https://uwflow.com/course/econ202
+    terms_offered: []
+  - antirequisites: AFM 280, BUS 288W, PSYCH 338
+    code: '211'
+    department: MSCI
+    description: 'Introduction to the concepts of learning, person perception, attitudes
+      and motivation in an organization. Consideration of communication, roles, norms
+      and decision making within a group. Discussion of power, control, leadership
+      and management in light of the above concepts. [Offered: F, S]'
+    name: Organizational Behaviour
+    prerequisites: null
+    review_link: https://uwflow.com/course/msci211
+    terms_offered: [2, 1]
+  - antirequisites: null
+    code: '311'
+    department: MSCI
+    description: 'The focus of this course is on the procedures and variables involved
+      in the design and redesign of organizations. Issues such as departmentation,
+      differentiation, integration, internal politics, innovation, authority and control
+      are discussed in the context of the underlying technology of the organization.
+      Emphasis will be placed on how one designs both the technical and the organizational
+      systems to ensure their compatibility, noting the effects that one has on the
+      other. [Offered: F, W]'
+    name: Organizational Design and Technology
+    prerequisites: null
+    review_link: https://uwflow.com/course/msci311
+    terms_offered: [2, 0]
+  - antirequisites: null
+    code: '260'
+    department: PSCI
+    description: An examination of Canada's federal system, parliamentary government,
+      and national political processes, such as the party system, interest groups,
+      the electoral system and voting behaviour.
+    name: Canadian Government & Politics
+    prerequisites: One of PSCI 100, 101, 110
+    review_link: https://uwflow.com/course/psci260
+    terms_offered: []
+  - antirequisites: PSYCH 121R
+    code: '101'
+    department: PSYCH
+    description: A general survey course designed to provide the student with an understanding
+      of the basic concepts and techniques of modern psychology as a behavioural science.
+    name: Introductory Psychology
+    prerequisites: null
+    review_link: https://uwflow.com/course/psych101
+    terms_offered: []
+  - antirequisites: SOC 120R
+    code: '101'
+    department: SOC
+    description: An introduction to the basic concepts and frames of reference of
+      sociological investigation and interpretation. Topics for analysis will include
+      communities, associations and institutions, classes and status groups, crowds
+      and publics, social processes, and social change. Special attention is given
+      to Canadian society.
+    name: Introduction to Sociology
+    prerequisites: null
+    review_link: https://uwflow.com/course/soc101
+    terms_offered: []
+  - antirequisites: null
+    code: 105A
+    department: ENGL
+    description: A close examination of a selection of works by major authors writing
+      in English in this period.
+    name: Literature in English, 1900 -1960
+    prerequisites: null
+    review_link: https://uwflow.com/course/engl105A
+    terms_offered: []
+  - antirequisites: null
+    code: '253'
+    department: HIST
+    description: This course examines the major themes in pre-Confederation Canadian
+      history including the rise and fall of New France, the creation of British North
+      American societies in the Maritimes and Upper Canada and economic and political
+      development.
+    name: 'Canadian History: The Colonial Period'
+    prerequisites: null
+    review_link: https://uwflow.com/course/hist253
+    terms_offered: []
+  - antirequisites: null
+    code: '254'
+    department: HIST
+    description: This course examines Confederation, the rise of political parties,
+      Canadian external relations, western discontent, the impact of both world wars
+      and political and economic changes in Canada since 1867.
+    name: 'Canadian History: The National Period'
+    prerequisites: null
+    review_link: https://uwflow.com/course/hist254
+    terms_offered: []
+  - antirequisites: null
+    code: '275'
+    department: HIST
+    description: 'This survey of the twentieth century explores the non-Western world''s
+      response to a series of selected global themes: the rise of the West; post-colonialism;
+      war and peace; human migration; culture; international organizations; climate
+      change; human rights; disease and globalization.'
+    name: The Modern World in Historical Perspective
+    prerequisites: Level at least 2A
+    review_link: https://uwflow.com/course/hist275
+    terms_offered: []
+  - antirequisites: PHIL 200A
+    code: 250A
+    department: PHIL
+    description: A historical survey of ancient and medieval philosophy in the Western
+      tradition with an emphasis on metaphysics and epistemology.
+    name: 'Great Works: Ancient and Medieval'
+    prerequisites: null
+    review_link: https://uwflow.com/course/phil250A
+    terms_offered: []
+  - antirequisites: null
+    code: 250B
+    department: PHIL
+    description: A historical survey of modern philosophy in the Western tradition
+      with an emphasis on metaphysics and epistemology.
+    name: 'Great Works: Modern'
+    prerequisites: null
+    review_link: https://uwflow.com/course/phil250B
+    terms_offered: []
+  - antirequisites: null
+    code: '315'
+    department: PHIL
+    description: An analysis from the standpoint of philosophical ethics of moral
+      issues arising in professional engineering practice. Issues include the social
+      responsibility of engineers, conflict of interest and obligation, morally acceptable
+      levels of risk, and moral implications of technology.
+    name: Ethics and The Engineering Profession
+    prerequisites: Level at least 2A
+    review_link: https://uwflow.com/course/phil315
+    terms_offered: [0]
+  notes: This is only the list of pre-scheduled Humanities and Social Sciences courses
+    that are unlikely to conflict with Engineering schedules. Click <a href=http://ugradcalendar.uwaterloo.ca/default.aspx?pageID=154#ListC--HumanitiesandSocialSciencesCourses>here</a>
+    for a complete list of courses for this category.
+  numberRequired: 2

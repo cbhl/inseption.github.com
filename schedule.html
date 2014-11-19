@@ -29,7 +29,7 @@ title: Schedule
                             placeholder="Elective"
                             autocomplete="off"
                             ng-model="term.electives[$index].value"
-                            typeahead="elective as (elective.code) for elective in electives | filter:$viewValue"
+                            typeahead="elective as (elective.code) for elective in autocompleteElectives | filter:$viewValue"
                             typeahead-on-select="saveSchedule()"
                             typeahead-template-url="/assets/templates/course.html" />
                         <span>{{ term.electives[$index].value.name }}</span>
@@ -46,21 +46,46 @@ title: Schedule
         <section class="col-12">
             <h1>Electives</h1>
             <p>You have to take the required number of electives from each of the following categories as indicated by parenthesis. It is recommended that you plan for your Advanced Technical Electives (ATE) ahead of time because some of them are only offered at specific terms.</p>
+            <h2>Filter Electives</h2>
+            <p>* Note that not all courses have specified which terms they are offered in.</p>
+            <ul id="filter">
+                <li data-term="W" class="active">Winter</li>
+                <li data-term="S" class="active">Spring</li>
+                <li data-term="F" class="active">Fall</li>
+            </ul>
         </section>
     </div>
 
-    {% for category in site.data.electives %}
+    {% for category in site.data.electives_generated %}
     {% cycle '<div class="row">', '' %}
-        <aside class="col-6">
+        <aside class="col-6 elective-list">
             <h2>{{ category.category }} ({{ category.numberRequired }})</h2>
             {% if category.notes != null %}
                 <p>{{ category.notes }}</p>
             {% endif %}
             <table>
                 {% for course in category.electives %}
-                <tr>
+                <tr data-offered="
+                {% for term in course.terms_offered %}
+                    {% case term %}
+                        {% when 0 %}W
+                        {% when 1 %}S
+                        {% when 2 %}F
+                    {% endcase %}
+                {% endfor %}
+                " title="{{ course.description }}" class="elective">
                     <td class="course-code">{{ course.department }} {{ course.code }}</td>
-                    <td class="course-title">{{ course.name }}</td>
+                    <td class="course-name">
+                        <h3>{{ course.name }} {% if course.terms_offered == empty %}*{% endif %}</h3>
+                        <ul>
+                            {% if course.prerequisites != '' and course.prerequisites != nil %}
+                                <li><strong>Prereq:</strong> {{ course.prerequisites }}</li>
+                            {% endif %}
+                            {% if course.antirequisites != '' and course.antirequisites != nil %}
+                                <li><strong>Antireq:</strong> {{ course.antirequisites }}</li>
+                            {% endif %}
+                        </ul>
+                    </td>
                 </tr>
                 {% endfor %}
             </table>
@@ -71,8 +96,8 @@ title: Schedule
 </article>
 
 <script>
-var electives = [
-    {% for category in site.data.electives %}
+var autocompleteElectives = [
+    {% for category in site.data.electives_generated %}
         {% for course in category.electives %}
         {
             code: "{{ course.department }} {{ course.code }}",

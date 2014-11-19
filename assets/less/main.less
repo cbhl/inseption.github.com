@@ -214,24 +214,31 @@ article.schedule{
             td{
                 overflow: hidden;
                 padding: 10px;
+            }
+        }
+    }
 
-                &.course-code,
-                &.course-title{
-                    @media (max-width: @mobile-width){
-                        float: none;
-                    }
-                }
+    ul#filter{
+        li{
+            border: @border;
+            border-radius: 3px;
+            cursor: pointer;
+            float: left;
+            margin-right: 5px;
+            padding: 10px 20px;
 
-                &.course-code{
-                    font-weight: bold;
-                    white-space: nowrap;
-                }
+            &.active{
+                background: @lightgray;
+                color: @text-color;
+            }
+        }
+    }
+}
 
-                &.course-title{
-                    text-overflow: ellipsis;
-                    width: 100%;
-                }
-
+section#schedule-builder{
+    table{
+        tr{
+            td{
                 strong{
                     margin-bottom: 5px;
                 }
@@ -253,32 +260,72 @@ article.schedule{
             }
         }
     }
+
+    ul.typeahead.dropdown-menu{
+        background: #fff;
+        border: @border;
+        border-color: @text-color;
+        box-shadow: 0 3px 5px @lightgray;
+        position: absolute;
+        width:15%;
+
+        li{
+            &:first-child{
+                border-top:none;
+            }
+
+            &:last-child{
+                border-bottom: none;
+            }
+
+            a{
+                cursor: pointer;
+                padding: 10px;
+
+                strong{
+                    display: inline;
+                    margin: 0;
+                }
+            }
+        }
+    }
 }
 
-ul.typeahead.dropdown-menu{
-    background: #fff;
-    border: @border;
-    border-color: @text-color;
-    box-shadow: 0 3px 5px @lightgray;
-    position: absolute;
-    width:15%;
+aside.elective-list{
+    table{
+        tr{
+            td{
+                &.course-code,
+                &.course-name{
+                    @media (max-width: @mobile-width){
+                        float: none;
+                    }
+                }
 
-    li{
-        &:first-child{
-            border-top:none;
-        }
+                &.course-code{
+                    font-weight: bold;
+                    white-space: nowrap;
+                }
 
-        &:last-child{
-            border-bottom: none;
-        }
+                &.course-name{
+                    text-overflow: ellipsis;
+                    width: 100%;
+                }
 
-        a{
-            cursor: pointer;
-            padding: 10px;
+                li{
+                    border: none;
+                    font-size: 13px;
+                    line-height: 20px;
+                }
 
-            strong{
-                display: inline;
-                margin: 0;
+                h3{
+                    margin: 0;
+                }
+
+                strong{
+                    display: inline;
+                    text-transform: uppercase;
+                }
             }
         }
     }
