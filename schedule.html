@@ -76,7 +76,16 @@ title: Schedule
                 " class="elective" title="{{ course.description }}">
                     <td class="course-code">{{ course.department }} {{ course.code }}</td>
                     <td class="course-name">
-                        <h3><a href="{{ course.review_link }}" class="review-link">{{ course.name }}</a>{% if course.terms_offered == empty %} <span title="Unspecified offered terms">*</span>{% endif %}</h3>
+                        <h3>
+                            {% if course.review_link != '' and course.review_link != nil %}
+                                <a href="{{ course.review_link }}" class="review-link">
+                                    {{ course.name }}
+                                </a>
+                            {% else %}
+                                {{ course.name }}
+                            {% endif %}
+                            {% if course.terms_offered == empty %} <span title="Unspecified offered terms">*</span>{% endif %}
+                        </h3>
                         <ul>
                             {% if course.prerequisites != '' and course.prerequisites != nil %}
                                 <li><strong>Prereq:</strong> {{ course.prerequisites }}</li>
