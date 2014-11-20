@@ -49,7 +49,7 @@ for category in electivesList:
         elective['antirequisites'] = data['antirequisites']
         elective['description']    = data['description']
         elective['terms_offered']  = termsOffered
-        elective['review_link']    = UWFLOW_URL + elective['department'].lower() + elective['code']
+        elective['review_link']    = UWFLOW_URL + elective['department'].lower() + elective['code'].lower()
 
         print 'F ' + elective['department'] + elective['code']
 

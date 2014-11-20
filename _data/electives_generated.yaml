@@ -321,7 +321,7 @@
     name: Cooperative and Adaptive Algorithms
     prerequisites: Level at least 4A Computer Engineering or Electrical Engineering
       or Software Engineering.
-    review_link: https://uwflow.com/course/ece457A
+    review_link: https://uwflow.com/course/ece457a
     terms_offered: [1]
   - antirequisites: SYDE 558
     code: 457B
