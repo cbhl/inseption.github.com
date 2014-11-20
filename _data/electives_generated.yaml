@@ -341,7 +341,7 @@
     name: Fundamentals of Computational Intelligence
     prerequisites: Level at least 4A Computer Engineering or Electrical Engineering
       or Mechatronics Engineering or Software Engineering or Systems Design Engineering.
-    review_link: https://uwflow.com/course/ece457B
+    review_link: https://uwflow.com/course/ece457b
     terms_offered: [0]
   - antirequisites: CS 458
     code: '458'
@@ -521,6 +521,7 @@
   - {code: '433', department: SYDE, name: Conflict Resolution}
   - {code: '475', department: SYDE, name: Image Processing}
   - {code: '558', department: SYDE, name: Fuzzy Logic and Neural Networks}
+  notes: One from this list or from the previous two lists (CS or ECE).
   numberRequired: 1
 - category: ATE - General
   electives:
@@ -627,6 +628,7 @@
       4A Mechatronics Engineering or Biomechanics Option or Ergonomics Option).
     review_link: https://uwflow.com/course/syde348
     terms_offered: [0]
+  notes: One from this list or from the previous three lists (CS, ECE, or CS/ECE).
   numberRequired: 1
 - category: Science
   electives:
@@ -815,7 +817,7 @@
       awareness and to help students to write clearly and effectively.
     name: The Use of English 1
     prerequisites: null
-    review_link: https://uwflow.com/course/engl140R
+    review_link: https://uwflow.com/course/engl140r
     terms_offered: []
   - antirequisites: null
     code: 210F
@@ -827,7 +829,7 @@
       communication.'
     name: Genres of Business Communication
     prerequisites: Level at least 2A
-    review_link: https://uwflow.com/course/engl210F
+    review_link: https://uwflow.com/course/engl210f
     terms_offered: []
   - {code: 210G, department: ENGL, name: Technical Writing - Online Mode}
   - {code: '100', department: SPCOM, name: Interpersonal Communication}
@@ -899,7 +901,7 @@
     name: Topics for List A Complementary Studies Courses Taken on Exchange by Engineering
       Students
     prerequisites: null
-    review_link: https://uwflow.com/course/gene22A
+    review_link: https://uwflow.com/course/gene22a
     terms_offered: []
   - antirequisites: ERS 231, GEOG 202B
     code: '203'
@@ -1181,7 +1183,7 @@
       in English in this period.
     name: Literature in English, 1900 -1960
     prerequisites: null
-    review_link: https://uwflow.com/course/engl105A
+    review_link: https://uwflow.com/course/engl105a
     terms_offered: []
   - antirequisites: null
     code: '253'
@@ -1222,7 +1224,7 @@
       tradition with an emphasis on metaphysics and epistemology.
     name: 'Great Works: Ancient and Medieval'
     prerequisites: null
-    review_link: https://uwflow.com/course/phil250A
+    review_link: https://uwflow.com/course/phil250a
     terms_offered: []
   - antirequisites: null
     code: 250B
@@ -1231,7 +1233,7 @@
       with an emphasis on metaphysics and epistemology.
     name: 'Great Works: Modern'
     prerequisites: null
-    review_link: https://uwflow.com/course/phil250B
+    review_link: https://uwflow.com/course/phil250b
     terms_offered: []
   - antirequisites: null
     code: '315'

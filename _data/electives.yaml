@@ -129,6 +129,7 @@
 -
     category: "ATE - CS/ECE"
     numberRequired: 1
+    notes: "One from this list or from the previous two lists (CS or ECE)."
     electives:
         -
             department: "CO"
@@ -189,6 +190,7 @@
 -
     category: "ATE - General"
     numberRequired: 1
+    notes: "One from this list or from the previous three lists (CS, ECE, or CS/ECE)."
     electives:
         -
             department: "CS"
