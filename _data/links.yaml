@@ -53,6 +53,10 @@
             url:  "https://uwflow.com/"
             desc: "Find course reviews made by other students"
         -
+            name: "Dreamspark"
+            url:  "http://e5.onthehub.com/WebStore/Welcome.aspx?ws=a2add8da-a5db-e311-93fd-b8ca3a5db7a3"
+            desc: "Obtain free legal copies of Visual Studio and Windows 7/8 with your student email"
+        -
             name: "Quest Login"
             url:  "https://quest.pecs.uwaterloo.ca/psp/SS/"
         -
