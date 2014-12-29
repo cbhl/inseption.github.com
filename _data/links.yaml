@@ -17,9 +17,13 @@
             name: "Who is hiring?"
             url:  "http://hnhiring.me/"
             desc: "Comments from the monthly \"Who is hiring?\" posts on Hacker News"
+        -
+            name: "Lessons from a year’s worth of hiring data"
+            url:  "http://blog.alinelerner.com/lessons-from-a-years-worth-of-hiring-data/"
+            desc: "Helpful tips for improving your resume"
 
 -
-    category: "Programming Related"
+    category: "Computer Science"
     links:
         -
             name: "Data Structure Visualizations"
@@ -30,13 +34,13 @@
             url:  "http://www.algomation.com/"
             desc: "Another website with visualizations on common algorithms seen in class"
         -
-            name: "A Programmer's Guide to Data Mining"
-            url:  "http://guidetodatamining.com/"
-            desc: "A free ebook on data mining that focuses on learning-through-doing (Python)"
-        -
             name: "Game Programming Patterns"
             url:  "http://gameprogrammingpatterns.com/index.html"
             desc: "A free ebook on common software design patterns in video games"
+        -
+            name: "A Programmer's Guide to Data Mining"
+            url:  "http://guidetodatamining.com/"
+            desc: "A free ebook on data mining that focuses on learning-through-doing (Python)"
         -
             name: "Mining of Massive Datasets"
             url:  "http://mmds.org/"
@@ -55,7 +59,7 @@
         -
             name: "Dreamspark"
             url:  "http://e5.onthehub.com/WebStore/Welcome.aspx?ws=a2add8da-a5db-e311-93fd-b8ca3a5db7a3"
-            desc: "Obtain free legal copies of Visual Studio and Windows 7/8 with your student email"
+            desc: "Obtain free (legal) copies of Visual Studio, Windows 7/8, and other Microsoft products with your student email"
         -
             name: "Quest Login"
             url:  "https://quest.pecs.uwaterloo.ca/psp/SS/"
