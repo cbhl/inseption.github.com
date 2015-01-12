@@ -57,10 +57,6 @@
             url:  "https://uwflow.com/"
             desc: "Find course reviews made by other students"
         -
-            name: "Dreamspark"
-            url:  "http://e5.onthehub.com/WebStore/Welcome.aspx?ws=a2add8da-a5db-e311-93fd-b8ca3a5db7a3"
-            desc: "Obtain free (legal) copies of Visual Studio, Windows 7/8, and other Microsoft products with your student email"
-        -
             name: "Quest Login"
             url:  "https://quest.pecs.uwaterloo.ca/psp/SS/"
         -
@@ -69,3 +65,14 @@
         -
             name: "Jobmine Login"
             url:  "https://jobmine.ccol.uwaterloo.ca/psp/SS/?cmd=login"
+-
+    category: "Freebies"
+    links:
+        -
+            name: "GitHub Student Developer Pack"
+            url:  "https://education.github.com/pack"
+            desc: "Get free access to popular developer tools with your student email"
+        -
+            name: "Dreamspark"
+            url:  "http://e5.onthehub.com/WebStore/Welcome.aspx?ws=a2add8da-a5db-e311-93fd-b8ca3a5db7a3"
+            desc: "Obtain free (legal) copies of Visual Studio, Windows 7/8, and other Microsoft products with your student email"
