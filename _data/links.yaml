@@ -14,13 +14,17 @@
             url:  "https://csclub.uwaterloo.ca/~f2fung/taxguide.html"
             desc: "Helpful information for filling out your US and Canadian taxes after doing an internship in the States"
         -
-            name: "Who is hiring?"
+            name: "HN Hiring"
             url:  "http://hnhiring.me/"
             desc: "Comments from the monthly \"Who is hiring?\" posts on Hacker News"
         -
             name: "Lessons from a year’s worth of hiring data"
             url:  "http://blog.alinelerner.com/lessons-from-a-years-worth-of-hiring-data/"
             desc: "Helpful tips for improving your resume"
+        -
+            name: "Country Insights"
+            url:  "http://www.intercultures.ca/cil-cai/countryinsights-apercuspays-eng.asp"
+            desc: "Learn about foreign cultures and customs and their differences with Canadian culture"
 
 -
     category: "Computer Science"
@@ -34,17 +38,12 @@
             url:  "http://www.algomation.com/"
             desc: "Another website with visualizations on common algorithms seen in class"
         -
-            name: "Game Programming Patterns"
-            url:  "http://gameprogrammingpatterns.com/index.html"
-            desc: "A free ebook on common software design patterns in video games"
+            name: "Open Data Structures"
+            url:  "http://opendatastructures.org/"
+            desc: "Implementations and analysis of data structures in pseudocode, Java, and C++"
         -
-            name: "A Programmer's Guide to Data Mining"
-            url:  "http://guidetodatamining.com/"
-            desc: "A free ebook on data mining that focuses on learning-through-doing (Python)"
-        -
-            name: "Mining of Massive Datasets"
-            url:  "http://mmds.org/"
-            desc: "A free ebook based on Stanford Computer Science course CS246: Mining Massive Datasets"
+            name: "Dictionary of Algorithms and Data Structures"
+            url:  "http://xlinux.nist.gov/dads/"
 -
     category: "University"
     links:
